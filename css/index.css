@@ -1,0 +1,41 @@
+.header{
+    width: 100%;
+    height: 400px;
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
+
+#carrusel{
+    width: 100%;
+    height: 400px;
+    background-color: saddlebrown;
+    position: absolute;
+}
+
+#carrusel .imagen{
+    height: 400px;
+    width: 100%;
+}
+
+.container{
+    background-color: white;
+    position: absolute;   
+    z-index: 2;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.idiomas{
+    z-index: 2;
+}
+
+.idiomaColor{
+    color: white;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.idiomaColor:active {
+    color: rgb(48, 48, 241);
+}
