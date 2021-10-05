@@ -51,3 +51,14 @@
 /*Fin idiomas*/
 
 /*FIN PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
+
+/*VIDEO*/
+.divVideo{
+    width: 100%;
+    text-align: center;
+}
+
+.video{
+    margin-top: 1%;
+}
+/*FIN VIDEO*/
