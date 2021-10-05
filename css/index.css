@@ -24,7 +24,7 @@
 
 
 /*Este es nuestro navegador*/
-.container{
+.container_header{
     background-color: white;
     position: absolute;   
     z-index: 2;
