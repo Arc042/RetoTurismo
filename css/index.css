@@ -95,3 +95,11 @@
 /*Fin video*/
 
 /*FIN ZONA CENTRAL*/
+
+.container-fluid{
+    display: flex;
+    width:100%;
+}
+.card{
+    width:100%;
+}
