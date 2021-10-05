@@ -52,13 +52,46 @@
 
 /*FIN PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 
-/*VIDEO*/
+
+/*ZONA CENTRAL*/
+
+/*Grid*/
+
+.central{
+    margin-top: 4%;
+    width: 100%;
+    height: 275px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#imgCirculo{
+    align-self: center;
+    width: 150px;
+    height: 150px; 
+    border-radius: 100px;
+}
+
+.card{
+    margin: 7%;
+}
+
+.grid{
+    border: 0px solid;
+}
+
+.row{
+    border: 0px;
+}
+/*Fin Grid*/
+
+
+/*Video*/
 .divVideo{
     width: 100%;
     text-align: center;
 }
 
-.video{
-    margin-top: 1%;
-}
-/*FIN VIDEO*/
+/*Fin video*/
+
+/*FIN ZONA CENTRAL*/
