@@ -1,3 +1,4 @@
+/*Footer*/
 #logo_footer{
     margin-left: 35%;
     height: auto;
@@ -10,4 +11,10 @@
 }
 .redes_footer{
     margin-top: 70px;
+}
+/*Fin Footer*/
+@media(min-width:460px) and  (max-width:933px){
+    #footer_mapa img{
+        margin-left: 0%;
+    }
 }
