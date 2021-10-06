@@ -1,0 +1,58 @@
+
+/*Este es nuestro navegador*/
+.container_header{
+    background-color: white;
+    position: absolute;   
+    z-index: 2;
+    margin-top: 0%;
+    width: 100%;
+}
+/*Fin navegador*/
+/*Banner*/
+.banner{
+    background-image: url(https://mdbcdn.b-cdn.net/img/new/slides/041.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 700px;
+}
+.banner_text{
+    margin-top: 10%;
+}
+/*Fin Banner*/
+/*Info*/
+#info{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.boton{
+    height: 50px;
+    width: 250px;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+/* Fin Info*/
+/*Lugares de interes*/
+.lugar_interes{
+    background-color: rgb(192, 192, 192);
+}
+.mapa{
+    width: 90%;
+    margin-left: 5%;
+}
+.enlaces{
+    margin-left: 40%;
+    margin-top: 2.5%;
+    text-decoration: none;
+}
+.lugar_card{
+    margin-top: 5%;
+}
+/*Fin Lugares de interes*/
+/*Carousel*/
+.carousel_img{
+    filter: brightness(50%)
+}
+/* Fin Carousel*/
