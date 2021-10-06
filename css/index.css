@@ -59,7 +59,7 @@
 
 .central{
     margin-top: 4%;
-    width: 100%;
+    width: auto;
     height: 275px;
     text-align: center;
     margin-bottom: 5%;
@@ -88,7 +88,7 @@
 
 /*Video*/
 .divVideo{
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 
