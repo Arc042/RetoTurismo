@@ -59,10 +59,11 @@
 
 .central{
     margin-top: 4%;
-    width: auto;
+    width: 98%;
     height: 275px;
     text-align: center;
     margin-bottom: 5%;
+    margin-left: 1%;
 }
 
 #imgCirculo{
@@ -103,3 +104,4 @@
 .card{
     width:100%;
 }
+
