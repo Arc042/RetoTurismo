@@ -1,7 +1,4 @@
-*{
-    position: relative;
-    width:100%;
-}
+
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
     width: 100%;
@@ -210,7 +207,6 @@ top:120%;
     }
     .grid .card{
        width:30%;
-       height:
     }
    
     .cards{
