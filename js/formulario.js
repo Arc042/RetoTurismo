@@ -1,8 +1,3 @@
-/*Validacion del email*/
-
-/*Validacion del email*/
-
-/* */
 /*Solo deja escribir valores alfabeticos*/
 function soloLetras(e) {
   var key = e.keyCode || e.which,
@@ -65,13 +60,23 @@ document.getElementById("formulario").onclick = function() {
     alert("NO HAS INTRODUCIDO NINGUNA PROVINCIA");
   }
 
-  if(document.getElementById("email").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUN EMAIL");
+  /*Validacion del email*/
+  emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    
+  var correocomprobacion=false;
+  var correo = document.getElementById("email");
+
+  if (emailRegex.test(correo.value)) {
+      correocomprobacion=true;
+  } else {
+      correocomprobacion=false;
+      alert("EMAIL NO VALIDO");
   }
+/*Fin validacion del email*/
 
   if(document.getElementById("telefono").value == "") {
     alert("NO HAS INTRODUCIDO NINGUN TELEFONO");
   }
 
+}
 /*Fin funcion que valida si hay algo escrito o no*/
-
