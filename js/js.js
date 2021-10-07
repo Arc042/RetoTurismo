@@ -1,5 +1,6 @@
 // Array con distintos lugares y zonas de interes a visitar
-infolugares=[/*Baleares*/["Baleares","../imgs/imgLugar/baleares/balearesBanner.jpg",
+infolugares=[/*Baleares*/
+            ["Baleares","../imgs/imgLugar/baleares/balearesBanner.jpg",
              "Archipiélago de Cabrera (Isla)","../imgs/imgLugar/baleares/baleares(archipielagocabrera).jpg",
              "Formentera (Isla)","../imgs/imgLugar/baleares/baleares(formentera).jpg",
              "Ibiza (Isla)","../imgs/imgLugar/baleares/baleares(ibiza).jpg",
@@ -125,5 +126,39 @@ infolugares=[/*Baleares*/["Baleares","../imgs/imgLugar/baleares/balearesBanner.j
              "Iglesia de Santa Engracia","../imgs/imgLugar/zaragoza/zaragoza(santaengracia).jpg",
              "Puente del Tercer Milenio","../imgs/imgLugar/zaragoza/zaragoza(tercermilenio).jpg"]]
 //texto de ejemplo
-MuchoTexto="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
-TextoChiquito="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa mollitia libero illo impedit laboriosam alias provident. Consequatur earum, provident soluta veniam nobis, quos, iusto sit nihil accusantium tempore quaerat."
+TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
+Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa mollitia libero illo impedit laboriosam alias provident. Consequatur earum, provident soluta veniam nobis, quos, iusto sit nihil accusantium tempore quaerat."
+//variales para usar en el for
+rellenarHTML = ""
+flag = false
+//cambiar el clasname a lo que necesites para llamar a esta pagina
+lugarSeleccionado = document.getElementsByClassName('lugar')
+
+
+
+
+
+
+console.log(infolugares)
+
+//for con una condicion para detenerse en cuanto encuentre el lugar deseado
+
+//variable que almacene el valor seleccionado por el usuario
+
+// generar el html, el cual va a almacenar la posicion [0] como titulo y la posicion [1] como img del banner
+//mientras que el resto de posiciones pares van a ser el nombre del lugar y las impares la imagen del card
+//crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
+
+for (i = 0; i < infolugares.length && flag == false ; i++) {
+
+    if (lugarSeleccionado == infolugares[i][0]) {
+        flag = true
+        
+        //agregar todo el html del contenedor principal
+        rellenarHTML = "html"
+
+    }    
+
+
+}
+console.log("fin")
