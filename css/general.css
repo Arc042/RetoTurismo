@@ -13,8 +13,14 @@
     margin-top: 70px;
 }
 /*Fin Footer*/
-@media(min-width:460px) and  (max-width:933px){
+@media(max-width:995px){
     #footer_mapa img{
+        margin-left: 0% !important;
+    }
+    #logo_footer{
         margin-left: 0%;
+    }
+    .redes_footer_contenedor{
+        margin-left: 5%;
     }
 }
