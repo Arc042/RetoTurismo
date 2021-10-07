@@ -56,3 +56,10 @@
     filter: brightness(50%)
 }
 /* Fin Carousel*/
+/*Media Query*/
+@media(max-width:767px){
+    .boton{
+        display: none !important;
+    }
+}
+/*Fin Media Query*/
