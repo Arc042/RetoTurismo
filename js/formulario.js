@@ -80,3 +80,17 @@ document.getElementById("formulario").onclick = function() {
 
 }
 /*Fin funcion que valida si hay algo escrito o no*/
+
+document.getElementById("formulario").onclick = function() {
+
+ document.getElementById("nombre").value='';
+ document.getElementById("apellido").value='';
+ document.getElementById("direccion").value='';
+ document.getElementById("cp").value='';
+ document.getElementById("ciudad").value='';
+ document.getElementById("provincia").value='';
+ document.getElementById("email").value='';
+ document.getElementById("telefono").value='';
+ document.getElementById("respuesta").value='';
+
+}
