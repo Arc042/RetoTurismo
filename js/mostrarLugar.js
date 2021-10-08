@@ -103,7 +103,7 @@ infolugares=[/*Baleares*/
              "Setas de Sevilla","../imgs/imgLugar/sevilla/sevilla(setas).jpg"],
         
              //Valencia
-             ["valencia","../imgs/imgLugar/valencia/valencia1Banner.jpg",
+             ["Valencia","../imgs/imgLugar/valencia/valencia1Banner.jpg",
              "Ciudad de las Artes y de las Ciencias","../imgs/imgLugar/valencia/valencia(artes y ciencias).jpg",
              "Catedral de Valencia","../imgs/imgLugar/valencia/valencia(catedral).jpg",
              "Museo de las Ciencias","../imgs/imgLugar/valencia/valencia(ciencias).jpg",
@@ -156,7 +156,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
              ' <div class="mask" >'
               '  <div class="d-flex justify-content-center align-items-center h-100">'
                '   <div class="text-white banner_text">'
-                '    <h1 class="mb-3">Heading</h1>'
+                '    <h1 class="mb-3">'+infolugares[i][0]+'</h1>'
                  '   <h4 class="mb-3">Subheading</h4>'
                   '  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>'
                   '</div>'
@@ -167,7 +167,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
             '<!-- Info -->'
             '<div class="d-flex" id="info">'
               '<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
-                TextoBanner
+                +TextoBanner+
               '</p>'
               '<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
                 '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
@@ -183,26 +183,43 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
               '<h2 class="text-center">Lugares de interes</h2>'
               '<br>'
               '<div class="d-flex flex-row mapa">'
-                '<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column">'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'//for con lugares de interes
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
-                  '<a class="enlaces" href="">hola</a>'
+                '<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
+                  for (let j = 2; j < infolugares[i].length; j++) {
+                    if (i % 2 == 0) {
+                      document.getElementById('interes').innerHTML = '<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
+                    }
+                    
+                  }
                   '<br>'
                 '</div>'
                 '<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'
                   '<div class="card mb-3" style="max-width: 540px;">'
                     '<div class="row g-0">'
-                      '<div class="col-md-4">'
+                      '<div class="col-md-4 interes_img">'
+                        var img = document.getElementsByClassName('lugar_interes') ///////estoy aqui
+                        for (let l = 2; l < infolugares[i].length; l++) {
+                          if (l % 2 == 1 && img.value==infolugares[i][l]) {
+                            document.getElementById('interes_img').innerHTML = 
+                            '<img src="..." class="img-fluid rounded-start" alt="...">'
+                            ;
+                          }
+                          
+                        }
                         '<img src="..." class="img-fluid rounded-start" alt="...">'
                       '</div>'
                       '<div class="col-md-8">'
-                        '<div class="card-body">'//for con info lugares de interes
+                        '<div class="card-body card_interes">'//for con info lugares de interes
+                          var nombre = document.getElementsByClassName('lugar_interes')
+                          for (let k = 2; k < infolugares[i].length; k++) {
+                            if (k % 2 == 1 ) {
+                              document.getElementById('card_interes').innerHTML = 
+                              '<h5 class="card-title">'+nombre.value+'</h5>'
+                              '<p class="card-text"></p>'
+                              '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                              ;
+                            }
+                            
+                          }
                           '<h5 class="card-title">Card title</h5>'
                           '<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
                           '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
