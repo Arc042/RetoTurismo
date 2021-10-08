@@ -1,7 +1,11 @@
+
 body{
  width:100%;
  position: static;
 }
+
+
+
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
     display:flex;
@@ -212,7 +216,9 @@ top:120%;
     }
     .grid .card{
        width:30%;
+
       
+
     }
    
     .cards{
