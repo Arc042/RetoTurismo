@@ -281,6 +281,6 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
 
 
     }
-    
+    document.write(rellenarHTML)
     console.log("fin")
 }
