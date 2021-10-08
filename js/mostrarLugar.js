@@ -131,77 +131,139 @@ Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa
 //variales para usar en el for
 rellenarHTML = ""
 flag = false
-//cambiar el clasname a lo que necesites para llamar a esta pagina
-lugarSeleccionado = document.getElementsByClassName('lugar')
-
-
-
-
-
 
 console.log(infolugares)
 
+
+function buscarLugar() {
+//cambiar el clasname a lo que necesites para llamar a esta pagina
+lugarSeleccionado = document.getElementsByClassName('lugar')
+
 //for con una condicion para detenerse en cuanto encuentre el lugar deseado
-
 //variable que almacene el valor seleccionado por el usuario
-
 // generar el html, el cual va a almacenar la posicion [0] como titulo y la posicion [1] como img del banner
 //mientras que el resto de posiciones pares van a ser el nombre del lugar y las impares la imagen del card
 //crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
 
-for (i = 0; i < infolugares.length && flag == false ; i++) {
+    for (i = 0; i < infolugares.length && flag == false ; i++) {
 
-    if (lugarSeleccionado == infolugares[i][0]) {
-        flag = true
-        
-        //agregar todo el html del contenedor principal
-        rellenarHTML = "html"
+        if (lugarSeleccionado == infolugares[i][0]) {
+            flag = true
+            
+            //agregar todo el html del contenedor principal
+            rellenarHTML = "<!-- Banner -->"
+            '<div class="p-5 text-center bg-image banner" >'
+             ' <div class="mask" >'
+              '  <div class="d-flex justify-content-center align-items-center h-100">'
+               '   <div class="text-white banner_text">'
+                '    <h1 class="mb-3">Heading</h1>'
+                 '   <h4 class="mb-3">Subheading</h4>'
+                  '  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>'
+                  '</div>'
+                '</div>'
+              '</div>'
+            '</div>'
+            '<!-- Fin Banner -->'
+            '<!-- Info -->'
+            '<div class="d-flex" id="info">'
+              '<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
+                TextoBanner
+              '</p>'
+              '<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
+                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+              '</div>'
+            '</div>'
+            '<!-- Fin Info -->'
+            '<br>'
+            '<br>'
+            '<!-- Lugares de interes -->'
+            '<div class="lugar_interes">'
+              '<h2 class="text-center">Lugares de interes</h2>'
+              '<br>'
+              '<div class="d-flex flex-row mapa">'
+                '<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column">'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'//for con lugares de interes
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<a class="enlaces" href="">hola</a>'
+                  '<br>'
+                '</div>'
+                '<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'
+                  '<div class="card mb-3" style="max-width: 540px;">'
+                    '<div class="row g-0">'
+                      '<div class="col-md-4">'
+                        '<img src="..." class="img-fluid rounded-start" alt="...">'
+                      '</div>'
+                      '<div class="col-md-8">'
+                        '<div class="card-body">'//for con info lugares de interes
+                          '<h5 class="card-title">Card title</h5>'
+                          '<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
+                          '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                        '</div>'
+                      '</div>'
+                    '</div>'
+                  '</div>'
+                '</div>'
+              '</div>'
+            '</div>'
+            '<!-- Fin Lugares de interes -->'
+            '<br>'
+            '<br>'
+            '<!-- Carousel -->'
+            '<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">'
+              '<div class="carousel-indicators">'
+                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"'
+                      'aria-current="true" aria-label="Slide 1"></button>'
+                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"'
+                      'aria-label="Slide 2"></button>'
+                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"'
+                      'aria-label="Slide 3"></button>'
+              '</div>
+              '<div class="carousel-inner">''
+                  '<div class="carousel-item active" data-bs-interval="10000">'
+                      '<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      '<div class="carousel-caption d-none d-md-block">'
+                          '<h5 class="text-white">First slide label</h5>'
+                          '<p class="text-white">Some representative placeholder content for the first slide.</p>'
+                      '</div>'
+                  '</div>'
+                  '<div class="carousel-item" data-bs-interval="2000">'
+                      '<img src="../imgs/imgLugar/barcelona/barcelonaBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      '<div class="carousel-caption d-none d-md-block">'
+                          '<h5 class="text-white">Second slide label</h5>'
+                          '<p class="text-white">Some representative placeholder content for the second slide.</p>'
+                      '</div>'
+                  '</div>'
+                  '<div class="carousel-item">'
+                      '<img src="../imgs/imgLugar/baleares/balearesBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      '<div class="carousel-caption d-none d-md-block">'
+                          '<h5 class="text-white">Third slide label</h5>'
+                          '<p class="text-white">Some representative placeholder content for the third slide.</p>'
+                      '</div>'
+                  '</div>'
+              '</div>'
+              '<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">'
+                  '<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
+                  '<span class="visually-hidden">Previous</span>'
+              '</button>'
+              '<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">'
+                  '<span class="carousel-control-next-icon" aria-hidden="true"></span>'
+                  '<span class="visually-hidden">Next</span>'
+              '</button>'
+          '</div>'
+            '<!-- Fin Carousel -->'
 
-    }    
+        }    
 
 
-}
-console.log("fin")
-
-
-
-
-
-
-
-
-
-
-
-
-
-idiomas=document.querySelectorAll("a");
-for (let i = 0; i < idiomas.length; i++) {
-    console.log(a);
+    }
     
+    console.log("fin")
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
