@@ -225,7 +225,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
                       'aria-label="Slide 2"></button>'
                   '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"'
                       'aria-label="Slide 3"></button>'
-              '</div>
+              '</div>'
               '<div class="carousel-inner">''
                   '<div class="carousel-item active" data-bs-interval="10000">'
                       '<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
