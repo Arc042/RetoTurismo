@@ -135,12 +135,16 @@ flag = false
 console.log(infolugares)
 
 
-function buscarLugar() {
-  
+
+function buscarLugar(lugarSeleccionado) {
+  console.log(lugarSeleccionado);
   //window.location="lugar.html"; ////cambiar de html
   console.log('ha entrado')
 //cambiar el clasname a lo que necesites para llamar a esta pagina
-lugarSeleccionado = document.getElementsByClassName('lugar')
+/*lugarSeleccionado = document.getElementsByClassName("lugar").getAttribute('value');
+console.log(lugarSeleccionado);
+lugarSeleccionado2 = document.getElementById("lugar").getAttribute('value');
+console.log(lugarSeleccionado2);*/
 
 //for con una condicion para detenerse en cuanto encuentre el lugar deseado
 //variable que almacene el valor seleccionado por el usuario
@@ -149,10 +153,11 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
 //crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
 
     for (i = 0; i < infolugares.length && flag == false ; i++) {
-
+      rellenarHTML= ''
         if (lugarSeleccionado == infolugares[i][0]) {
             flag = true
-
+            console.log('hola2')
+            
             //agregar todo el html del contenedor principal
             rellenarHTML = '<!-- Banner -->'
             +'<div class="p-5 text-center bg-image banner" >'
@@ -189,7 +194,8 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
                 +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
                   for (let j = 2; j < infolugares[i].length; j++) {
                     if (i % 2 == 0) {
-                      document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
+                      /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
+                      +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
                     }
                     
                   }
@@ -202,9 +208,8 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
                         var img = document.getElementsByClassName('lugar_interes') 
                         for (let l = 2; l < infolugares[i].length; l++) {
                           if (l % 2 == 0 && img.value==infolugares[i][l]) {
-                            document.getElementById('interes_img').innerHTML = 
+                            /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
                             +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
-                            ;
                           }
                           
                         }
@@ -215,11 +220,16 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
                           var nombre = document.getElementsByClassName('lugar_interes')
                           for (let k = 2; k < infolugares[i].length; k++) {
                             if (k % 2 == 1 ) {
-                              document.getElementById('card_interes').innerHTML = 
+                              /*document.getElementById('card_interes').innerHTML = 
                               +'<h5 class="card-title">'+nombre.value+'</h5>'
                               +'<p class="card-text">'+Textolugar+'</p>'
                               +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-                              ;
+                              ;*/
+                              
+                              +'<h5 class="card-title">'+nombre.value+'</h5>'
+                              +'<p class="card-text">'+Textolugar+'</p>'
+                              +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                              
                             }
                             
                           }
@@ -279,7 +289,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
               +'</button>'
           +'</div>'
             +'<!-- Fin Carousel -->'
-
+            
         }    
 
 
