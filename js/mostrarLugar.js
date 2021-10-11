@@ -136,6 +136,9 @@ console.log(infolugares)
 
 
 function buscarLugar() {
+  
+  //window.location="lugar.html"; ////cambiar de html
+  console.log('ha entrado')
 //cambiar el clasname a lo que necesites para llamar a esta pagina
 lugarSeleccionado = document.getElementsByClassName('lugar')
 
@@ -151,136 +154,138 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
             flag = true
             
             //agregar todo el html del contenedor principal
-            rellenarHTML = "<!-- Banner -->"
-            '<div class="p-5 text-center bg-image banner" >'
-             ' <div class="mask" >'
-              '  <div class="d-flex justify-content-center align-items-center h-100">'
-               '   <div class="text-white banner_text">'
-                '    <h1 class="mb-3">'+infolugares[i][0]+'</h1>'
-                 '   <h4 class="mb-3">Subheading</h4>'
-                  '  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>'
-                  '</div>'
-                '</div>'
-              '</div>'
-            '</div>'
-            '<!-- Fin Banner -->'
-            '<!-- Info -->'
-            '<div class="d-flex" id="info">'
-              '<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
+            rellenarHTML = '<!-- Banner -->'
+            +'<div class="p-5 text-center bg-image banner" >'
+             +' <div class="mask" >'
+              +'  <div class="d-flex justify-content-center align-items-center h-100">'
+               +'   <div class="text-white banner_text">'
+                +'    <h1 class="mb-3">'+infolugares[i][0]+'</h1>'
+                 +'   <h4 class="mb-3">Subheading</h4>'
+                  +'  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>'
+                  +'</div>'
+                +'</div>'
+              +'</div>'
+            +'</div>'
+            +'<!-- Fin Banner -->'
+            +'<!-- Info -->'
+            +'<div class="d-flex" id="info">'
+              +'<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
                 +TextoBanner+
-              '</p>'
-              '<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
-                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
-                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
-                '<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
-              '</div>'
-            '</div>'
-            '<!-- Fin Info -->'
-            '<br>'
-            '<br>'
-            '<!-- Lugares de interes -->'
-            '<div class="lugar_interes">'
-              '<h2 class="text-center">Lugares de interes</h2>'
-              '<br>'
-              '<div class="d-flex flex-row mapa">'
-                '<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
+              +'</p>'
+              +'<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
+                +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+                +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+                +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+              +'</div>'
+            +'</div>'
+            +'<!-- Fin Info -->'
+            +'<br>'
+            +'<br>'
+            +'<!-- Lugares de interes -->'
+            +'<div class="lugar_interes">'
+              +'<h2 class="text-center">Lugares de interes</h2>'
+              +'<br>'
+              +'<div class="d-flex flex-row mapa">'
+                +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
                   for (let j = 2; j < infolugares[i].length; j++) {
                     if (i % 2 == 0) {
-                      document.getElementById('interes').innerHTML = '<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
+                      document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
                     }
                     
                   }
-                  '<br>'
-                '</div>'
-                '<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'
-                  '<div class="card mb-3" style="max-width: 540px;">'
-                    '<div class="row g-0">'
-                      '<div class="col-md-4 interes_img">'
-                        var img = document.getElementsByClassName('lugar_interes') ///////estoy aqui
+                  +'<br>'
+                +'</div>'
+                +'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'
+                  +'<div class="card mb-3" style="max-width: 540px;">'
+                    +'<div class="row g-0">'
+                      +'<div class="col-md-4 interes_img">'
+                        var img = document.getElementsByClassName('lugar_interes') 
                         for (let l = 2; l < infolugares[i].length; l++) {
-                          if (l % 2 == 1 && img.value==infolugares[i][l]) {
+                          if (l % 2 == 0 && img.value==infolugares[i][l]) {
                             document.getElementById('interes_img').innerHTML = 
-                            '<img src="..." class="img-fluid rounded-start" alt="...">'
+                            +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
                             ;
                           }
                           
                         }
-                        '<img src="..." class="img-fluid rounded-start" alt="...">'
-                      '</div>'
-                      '<div class="col-md-8">'
-                        '<div class="card-body card_interes">'//for con info lugares de interes
+                        +'<img src="..." class="img-fluid rounded-start" alt="...">'
+                      +'</div>'
+                      +'<div class="col-md-8">'
+                        +'<div class="card-body card_interes">'//for con info lugares de interes
                           var nombre = document.getElementsByClassName('lugar_interes')
                           for (let k = 2; k < infolugares[i].length; k++) {
                             if (k % 2 == 1 ) {
                               document.getElementById('card_interes').innerHTML = 
-                              '<h5 class="card-title">'+nombre.value+'</h5>'
-                              '<p class="card-text"></p>'
-                              '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                              +'<h5 class="card-title">'+nombre.value+'</h5>'
+                              +'<p class="card-text">'+Textolugar+'</p>'
+                              +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
                               ;
                             }
                             
                           }
-                          '<h5 class="card-title">Card title</h5>'
-                          '<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
-                          '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-                        '</div>'
-                      '</div>'
-                    '</div>'
-                  '</div>'
-                '</div>'
-              '</div>'
-            '</div>'
-            '<!-- Fin Lugares de interes -->'
-            '<br>'
-            '<br>'
-            '<!-- Carousel -->'
-            '<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">'
-              '<div class="carousel-indicators">'
-                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"'
-                      'aria-current="true" aria-label="Slide 1"></button>'
-                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"'
-                      'aria-label="Slide 2"></button>'
-                  '<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"'
-                      'aria-label="Slide 3"></button>'
-              '</div>'
-              '<div class="carousel-inner">'
-                  '<div class="carousel-item active" data-bs-interval="10000">'
-                      '<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
-                      '<div class="carousel-caption d-none d-md-block">'
-                          '<h5 class="text-white">First slide label</h5>'
-                          '<p class="text-white">Some representative placeholder content for the first slide.</p>'
-                      '</div>'
-                  '</div>'
-                  '<div class="carousel-item" data-bs-interval="2000">'
-                      '<img src="../imgs/imgLugar/barcelona/barcelonaBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
-                      '<div class="carousel-caption d-none d-md-block">'
-                          '<h5 class="text-white">Second slide label</h5>'
-                          '<p class="text-white">Some representative placeholder content for the second slide.</p>'
-                      '</div>'
-                  '</div>'
-                  '<div class="carousel-item">'
-                      '<img src="../imgs/imgLugar/baleares/balearesBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
-                      '<div class="carousel-caption d-none d-md-block">'
-                          '<h5 class="text-white">Third slide label</h5>'
-                          '<p class="text-white">Some representative placeholder content for the third slide.</p>'
-                      '</div>'
-                  '</div>'
-              '</div>'
-              '<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">'
-                  '<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
-                  '<span class="visually-hidden">Previous</span>'
-              '</button>'
-              '<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">'
-                  '<span class="carousel-control-next-icon" aria-hidden="true"></span>'
-                  '<span class="visually-hidden">Next</span>'
-              '</button>'
-          '</div>'
-            '<!-- Fin Carousel -->'
+                          +'<h5 class="card-title">Card title</h5>'
+                          +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
+                          +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                        +'</div>'
+                      +'</div>'
+                    +'</div>'
+                  +'</div>'
+                +'</div>'
+              +'</div>'
+            +'</div>'
+            +'<!-- Fin Lugares de interes -->'
+            +'<br>'
+            +'<br>'
+            +'<!-- Carousel -->'
+            +'<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">'
+              +'<div class="carousel-indicators">'
+                  +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"'
+                      +'aria-current="true" aria-label="Slide 1"></button>'
+                  +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"'
+                      +'aria-label="Slide 2"></button>'
+                  +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"'
+                      +'aria-label="Slide 3"></button>'
+              +'</div>'
+              +'<div class="carousel-inner">'
+                  +'<div class="carousel-item active" data-bs-interval="10000">'
+                      +'<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      +'<div class="carousel-caption d-none d-md-block">'
+                          +'<h5 class="text-white">First slide label</h5>'
+                          +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
+                      +'</div>'
+                  +'</div>'
+                  +'<div class="carousel-item" data-bs-interval="2000">'
+                      +'<img src="../imgs/imgLugar/barcelona/barcelonaBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      +'<div class="carousel-caption d-none d-md-block">'
+                          +'<h5 class="text-white">Second slide label</h5>'
+                          +'<p class="text-white">Some representative placeholder content for the second slide.</p>'
+                      +'</div>'
+                  +'</div>'
+                  +'<div class="carousel-item">'
+                      +'<img src="../imgs/imgLugar/baleares/balearesBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+                      +'<div class="carousel-caption d-none d-md-block">'
+                          +'<h5 class="text-white">Third slide label</h5>'
+                          +'<p class="text-white">Some representative placeholder content for the third slide.</p>'
+                      +'</div>'
+                  +'</div>'
+              +'</div>'
+              +'<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">'
+                  +'<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
+                  +'<span class="visually-hidden">Previous</span>'
+              +'</button>'
+              +'<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">'
+                  +'<span class="carousel-control-next-icon" aria-hidden="true"></span>'
+                  +'<span class="visually-hidden">Next</span>'
+              +'</button>'
+          +'</div>'
+            +'<!-- Fin Carousel -->'
 
         }    
 
 
     }
-    document.write(rellenarHTML)
-    console.log("fin")
+    console.log(rellenarHTML);
+    document.getElementById('rellenar_lugar').innerHTML= 'hola';
+    //document.write(rellenarHTML)
+    console.log("fin");
 }
