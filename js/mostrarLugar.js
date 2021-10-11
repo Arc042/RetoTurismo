@@ -152,7 +152,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
 
         if (lugarSeleccionado == infolugares[i][0]) {
             flag = true
-            
+
             //agregar todo el html del contenedor principal
             rellenarHTML = '<!-- Banner -->'
             +'<div class="p-5 text-center bg-image banner" >'
@@ -285,7 +285,7 @@ lugarSeleccionado = document.getElementsByClassName('lugar')
 
     }
     console.log(rellenarHTML);
-    document.getElementById('rellenar_lugar').innerHTML= 'hola';
+    document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
     //document.write(rellenarHTML)
     console.log("fin");
 }
