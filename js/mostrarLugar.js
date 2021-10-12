@@ -153,11 +153,11 @@ console.log(lugarSeleccionado2);*/
 //crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
 
     for (i = 0; i < infolugares.length && flag == false ; i++) {
-      console.log("7")
+      
       rellenarHTML= ''
         if (lugarSeleccionado == infolugares[i][0]) {
             flag = true
-            console.log('hola2')
+            
             
             //agregar todo el html del contenedor principal
             rellenarHTML = '<!-- Banner -->'
@@ -194,7 +194,7 @@ console.log(lugarSeleccionado2);*/
               +'<div class="d-flex flex-row mapa">'
                 +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
                   for (let j = 2; j < infolugares[i].length; j++) {
-                    console.log("1")
+                    
                     if (i % 2 == 0) {
                       /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
                       +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
@@ -209,7 +209,7 @@ console.log(lugarSeleccionado2);*/
                       +'<div class="col-md-4 interes_img">'
                         var img = document.getElementsByClassName('lugar_interes') 
                         for (let l = 2; l < infolugares[i].length; l++) {
-                          console.log("2")
+                         
                           if (l % 2 == 0 && img.value==infolugares[i][l]) {
                             /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
                             +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
@@ -222,7 +222,7 @@ console.log(lugarSeleccionado2);*/
                         +'<div class="card-body card_interes">'//for con info lugares de interes
                           var nombre = document.getElementsByClassName('lugar_interes')
                           for (let k = 2; k < infolugares[i].length; k++) {
-                            console.log("3")
+                            
                             if (k % 2 == 1 ) {
                               /*document.getElementById('card_interes').innerHTML = 
                               +'<h5 class="card-title">'+nombre.value+'</h5>'
