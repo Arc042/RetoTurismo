@@ -24,14 +24,15 @@
     <div class="header">
 
         <!--menu de cambio de idioma-->
-        <nav class="idiomas position-absolute top-0 end-0" id="idioma" >
+        <nav class="idiomas position-absolute top-0 end-0" id="idioma">
             <a href="#" class="idiomaColor" onclick="cambioIdioma(1)">ES</a>
             <a href="#" class="idiomaColor" onclick="cambioIdioma(2)">EUS</a>
             <a href="#" class="idiomaColor" onclick="cambioIdioma(3)">EN</a>
         </nav>
 
         <!--Este es nuestro navegador-->
-        <div class="container_header hola position-absolute top-30 start-50 translate-middle" style="margin-top: 100px;">
+        <div class="container_header hola position-absolute top-30 start-50 translate-middle"
+            style="margin-top: 100px;">
             <header class="d-flex justify-content-center py-3 ">
 
                 <ul class="nav nav-pills" >
@@ -88,6 +89,7 @@
                         <div>
                             <h3>BILBAO</h3>
 
+
             <div class="paginas">
             <button type="button" id="pag" data-bs-target="#carouselExampleIndicators"  data-bs-slide-to="0" class="active btn-primary"
                 aria-current="true" aria-label="Slide 1">1</button>
@@ -108,38 +110,76 @@
                                 </div>
                                 </a>
 
-                                <a href="/html/lugar.html">
-                                <div class="cards lugar" onclick="buscarLugar('Madrid')">
-                                    <img src="/imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
-                                    <div><h3>MADRID</h3></div>
-                                </div>
-                                </a>
-
-                                <a href="/html/lugar.html">
-                                <div class="cards lugar" onclick="buscarLugar('Sevilla')"> 
-                                    <img src="/imgs/imgCard/plaza españa.jpg" class="img-fluid" alt="...">
-                                    <div><h3>SEVILLA</h3></div>
-                                </div>
-                                </a>
-
-                                <a href="/html/lugar.html">
-                                <div class="cards lugar" onclick="buscarLugar('Malaga')">
-                                    <img src="/imgs/imgCard/Castillo de la Estrella, Teba (Javier Flores) 2.jpg" class="img-fluid" alt="...">
-                                    <div><h3>MALAGA</h3></div>
-                                </div>
-                                </a>
+                            <div class="paginas">
+                                <button type="button" id="pag" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="0" class="active btn-primary" aria-current="true"
+                                    aria-label="Slide 1">1</button>
+                                <button type="button" id="pag" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="1" aria-label="Slide 2" class="btn-primary">2</button>
+                                <button type="button" id="pag" data-bs-target="#carouselExampleIndicators"
+                                    data-bs-slide-to="2" aria-label="Slide 3" class="btn-primary">3</button>
                             </div>
 
-                        </div>
-                    </div>
 
-                    <div class="cards">
-                        <img src="/imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
-                        <div>
-                            <h3>MADRID</h3>
-                        </div>
-                    </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active ">
+                                    <div class="container-fluid">
 
+
+                                        <div class="cards lugar" onclick="buscarLugar('Bilbao')">
+                                            <img src="/imgs/imgCard/bilbao-small2.jpg" class="img-fluid" alt="...">
+                                            <div>
+                                                <h3>BILBAO</h3>
+                                            </div>
+                                        </div>
+
+
+                                        <a href="/html/lugar.html">
+                                            <div class="cards lugar" onclick="buscarLugar('Madrid')">
+                                                <img src="/imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
+                                                <div>
+                                                    <h3>MADRID</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="/html/lugar.html">
+                                            <div class="cards lugar" onclick="buscarLugar('Sevilla')">
+                                                <img src="/imgs/imgCard/plaza españa.jpg" class="img-fluid" alt="...">
+                                                <div>
+                                                    <h3>SEVILLA</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="/html/lugar.html">
+                                            <div class="cards lugar" onclick="buscarLugar('Malaga')">
+                                                <img src="/imgs/imgCard/Castillo de la Estrella, Teba (Javier Flores) 2.jpg"
+                                                    class="img-fluid" alt="...">
+                                                <div>
+                                                    <h3>MALAGA</h3>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="cards">
+                                <img src="/imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
+                                <div>
+                                    <h3>MADRID</h3>
+                                </div>
+                            </div>
+
+
+
+                            <div class="cards">
+                                <img src="/imgs/imgCard/plaza españa.jpg" class="img-fluid" alt="...">
+                                <div>
+                                    <h3>SEVILLA</h3>
+                                </div>
 
                     <div class="cards">
                         <img src="/imgs/imgCard/plaza españa.jpg" class="img-fluid" alt="...">
@@ -159,8 +199,157 @@
                             <div class="cards lugar" onclick="buscarLugar('Madrid')">
                                 <img src="../imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
                                 <div><h3>MADRID</h3></div>
+
                             </div>
-                            </a>
+
+
+                            <div class="cards">
+                                <img src="/imgs/imgCard/Castillo de la Estrella, Teba (Javier Flores) 2.jpg"
+                                    class="img-fluid" alt="...">
+                                <div>
+                                    <h3>MALAGA</h3>
+
+                                    <div class="carousel-item">
+                                        <div class="container-fluid">
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Valencia')">
+                                                    <img src="/imgs/imgCard/valencia-ciudad-artes-ciencias.jpg"
+                                                        class="img-fluid" alt="...">
+                                                    <div>
+                                                        <h3>VALENCIA</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Santander')">
+                                                    <img src="/imgs/imgCard/centro-botin2.JPG" class="img-fluid"
+                                                        alt="...">
+                                                    <div>
+                                                        <h3>SANTANDER</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Canarias')">
+                                                    <img src="/imgs/imgCard/Dunas-Maspalomas.jpg" class="img-fluid"
+                                                        alt="...">
+                                                    <div>
+                                                        <h3>GRAN CANARIA</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Barcelona')">
+                                                    <img src="/imgs/imgLugar/barcelona/barcelona(campnou).jpg"
+                                                        class="img-fluid" alt="...">
+                                                    <div>
+                                                        <h3>BARCELONA</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <div class="container-fluid">
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Mallorca')">
+                                                    <img src="/imgs/imgCard/soller_Mallorca2.jpg" class="img-fluid"
+                                                        alt="...">
+                                                    <div>
+                                                        <h3>MALLORCA</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar" onclick="buscarLugar('Zaragoza')">
+                                                    <img src="/imgs/imgCard/el pilar.jpg" class="img-fluid" alt="...">
+                                                    <div>
+                                                        <h3>ZARAGOZA</h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="/html/lugar.html">
+                                                <div class="cards lugar"
+                                                    onclick="buscarLugar('Santiago de Compostela')">
+                                                    <img src="/imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg"
+                                                        class="img-fluid" alt="...">
+                                                    <div>
+                                                        <h3> SANTIAGO COMPOSTELA </h3>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="cards">
+                                        <img src="/imgs/imgCard/valencia-ciudad-artes-ciencias.jpg" class="img-fluid"
+                                            alt="...">
+                                        <div>
+                                            <h3>VALENCIA</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cards">
+                                        <img src="/imgs/imgCard/centro-botin2.JPG" class="img-fluid" alt="...">
+                                        <div>
+                                            <h3>SANTANDER</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cards">
+                                        <img src="/imgs/imgCard/Dunas-Maspalomas.jpg" class="img-fluid" alt="...">
+                                        <div>
+                                            <h3>GRAN CANARIA</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cards">
+                                        <img src="/imgs/imgLugar/barcelona/barcelona(campnou).jpg" class="img-fluid"
+                                            alt="...">
+                                        <div>
+                                            <h3>BARCELONA</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="cards">
+                                        <img src="/imgs/imgCard/soller_Mallorca2.jpg" class="img-fluid" alt="...">
+                                        <div>
+                                            <h3>MALLORCA</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cards">
+                                        <img src="/imgs/imgCard/el pilar.jpg" class="img-fluid" alt="...">
+                                        <div>
+                                            <h3>ZARAGOZA</h3>
+                                        </div>
+                                    </div>
+                                    <div class="cards">
+                                        <img src="/imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg"
+                                            class="img-fluid" alt="...">
+                                        <div>
+                                            <h3> SANTIAGO COMPOSTELA </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <a href="../html/lugar.html">
                             <div class="cards lugar" onclick="buscarLugar('Sevilla')"> 
@@ -215,12 +404,14 @@
                 <div class="carousel-item" >
                     <div class="container-fluid">
 
+
                         <a href="../html/lugar.html">
                         <div class="cards lugar" onclick="buscarLugar('Mallorca')">
                             <img src="../imgs/imgCard/soller_Mallorca2.jpg" class="img-fluid" alt="...">
                             <div><h3>MALLORCA</h3></div>
                         </div>
                         </a>
+
 
                         <a href="../html/lugar.html">
                         <div class="cards lugar" onclick="buscarLugar('Zaragoza')">
@@ -234,45 +425,20 @@
                     </div>
                 </div>
 
-                </div>
-            </div>
 
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="cards">
-                        <img src="/imgs/imgCard/valencia-ciudad-artes-ciencias.jpg" class="img-fluid" alt="...">
-                        <div>
-                            <h3>VALENCIA</h3>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <img src="/imgs/imgCard/centro-botin2.JPG" class="img-fluid" alt="...">
-                        <div>
-                            <h3>SANTANDER</h3>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <img src="/imgs/imgCard/Dunas-Maspalomas.jpg" class="img-fluid" alt="...">
-                        <div>
-                            <h3>GRAN CANARIA</h3>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <img src="/imgs/imgLugar/barcelona/barcelona(campnou).jpg" class="img-fluid" alt="...">
-                        <div>
-                            <h3>BARCELONA</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                            <button class="carousel-control-prev" id="bprev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="p" aria-hidden="true"><img src="/imgs/imgCard/botonPrev.png"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" id="bnext" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="n" aria-hidden="true"><img src="/imgs/imgCard/botonNext.png"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
 
-            <div class="carousel-item">
-                <div class="container-fluid">
-                    <div class="cards">
-                        <img src="/imgs/imgCard/soller_Mallorca2.jpg" class="img-fluid" alt="...">
-                        <div>
-                            <h3>MALLORCA</h3>
                         </div>
+                     
                     </div>
                     <div class="cards">
                         <img src="/imgs/imgCard/el pilar.jpg" class="img-fluid" alt="...">
@@ -288,13 +454,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-<<<<<<< HEAD
+            </div>                         
 
 
             
-=======
->>>>>>> parent of ab571b3 (aa)
+
         
             <button class="carousel-control-prev" id="bprev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
@@ -307,37 +471,52 @@
                 <span class="visually-hidden">Next</span>
             </button>
 
-        </div>
-
-<<<<<<< HEAD
-
-        <button class="carousel-control-prev" id="bprev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="p" aria-hidden="true"><img src="/imgs/imgCard/botonPrev.png"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" id="bnext" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="n" aria-hidden="true"><img src="/imgs/imgCard/botonNext.png"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+                        <button class="carousel-control-prev" id="bprev" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="p" aria-hidden="true"><img src="/imgs/imgCard/botonPrev.png"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" id="bnext" type="button"
+                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="n" aria-hidden="true"><img src="/imgs/imgCard/botonNext.png"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+5
 
 
-    <div id="rellenar_lugar">
 
-        </div>
+                    <!-- bootstrap -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+                        rel="stylesheet"
+                        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                        crossorigin="anonymous">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
 
-=======
->>>>>>> parent of ab571b3 (aa)
+
+                    <div id="rellenar_lugar">
+
+                    </div>
+
+                    <!-- bootstrap -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+                        rel="stylesheet"
+                        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+                        crossorigin="anonymous">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+
+
+
+                </div>
+            </div>
+
+
         <!-- bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -346,9 +525,10 @@
             crossorigin="anonymous"></script>
 
 
-    </div>
-    </div>
+    <div id="rellenar_lugar">
 
+
+        </div>
     </div>
     <br>
     <br>
@@ -367,17 +547,38 @@
         </svg>
         <p>¿Playas y pueblitos pesqueros? ¿Ciudades que parece, fueron creadas ayer? ¿Bosques vestidos con niebla
             mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje espectacular?
-            <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .</p>
+            <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .
+        </p>
 
 
-    
-     <div class="text-center mt-4">
 
-        <h3 class="module-title ">THE SPAIN ROUTE · DE RUTA POR ESPAÑA</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M4.5 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H5.25a.75.75 0 01-.75-.75z"></path></svg>
-        <p>¿Playas y pueblitos pesqueros? ¿Ciudades que parece, fueron creadas ayer? ¿Bosques vestidos con niebla mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje espectacular? <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .</p>
-     
-    </div>
+        <div class="text-center mt-4">
+
+
+            <h3 class="module-title ">THE SPAIN ROUTE · DE RUTA POR ESPAÑA</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                <path fill-rule="evenodd"
+                    d="M4.5 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H5.25a.75.75 0 01-.75-.75z"></path>
+            </svg>
+            <p>¿Playas y pueblitos pesqueros? ¿Ciudades que parece, fueron creadas ayer? ¿Bosques vestidos con
+                niebla mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje
+                espectacular? <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te
+                plazca .</p>
+
+        </div>
+
+        <!--Elementos del centro-->
+        <div class="central">
+
+            <!--Grid con sus cards-->
+            <div class="grid bg-primary">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem; border: none;">
+                            <img src="/imgs/cardFotos/viaje.jpg" class="card-img-top" id="imgCirculo">
+                            <div class="card-body">
+                                <h5 class="card-title">DESCUBRE</h5>
+                            </div>
 
     <!--Elementos del centro-->
     <div class="central">
@@ -391,58 +592,58 @@
                         <img src="/imgs/cardFotos/viaje.jpg" class="card-img-top" id="imgCirculo">
                         <div class="card-body">
                             <h5 class="card-title">DESCUBRE</h5>
+
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem; border: none;">
-                        <img src="/imgs/cardFotos/vive.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
-                            <h5 class="card-title">VIVE</h5>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; border: none;">
+                            <img src="/imgs/cardFotos/vive.jpg" class="card-img-top" id="imgCirculo">
+                            <div class="card-body">
+                                <h5 class="card-title">VIVE</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem; border: none;">
-                        <img src="/imgs/cardFotos/lago.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
-                            <h5 class="card-title">RECOMIENDA</h5>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; border: none;">
+                            <img src="/imgs/cardFotos/lago.jpg" class="card-img-top" id="imgCirculo">
+                            <div class="card-body">
+                                <h5 class="card-title">RECOMIENDA</h5>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card" style="width: 18rem; border: none;">
-                        <img src="/imgs/cardFotos/vuelve.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
-                            <h5 class="card-title">VUELVE</h5>
+                    <div class="col">
+                        <div class="card" style="width: 18rem; border: none;">
+                            <img src="/imgs/cardFotos/vuelve.jpg" class="card-img-top" id="imgCirculo">
+                            <div class="card-body">
+                                <h5 class="card-title">VUELVE</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+
         </div>
 
-    </div>
 
 
+        <!--Video-->
+        <div class="box">
+            <div class="divVideo">
 
-    <!--Video-->
-    <div class="box">
-        <div class="divVideo">
-
-            <iframe width="700" height="400"
-                src="https://www.youtube.com/embed/yfiELvRvRIY?autoplay=1&mute=1&enablejsapi=1"
-                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                <iframe width="700" height="400"
+                    src="https://www.youtube.com/embed/yfiELvRvRIY?autoplay=1&mute=1&enablejsapi=1"
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
     gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
         </div>
-    </div>
 
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
 
         <div id="rellenar_lugar">
