@@ -183,7 +183,7 @@ li {
     display: flex;
     width:100%;
     justify-content: center;
-    margin-top:500px;
+    margin-top:450px;
     
 }
 .EnlaceLugar{
@@ -271,7 +271,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:500px;
+        margin-top:450px;
     
     }
     .central{
@@ -304,7 +304,7 @@ top:120%;
         height:400px;
         margin:10px;
         padding:3px;
-        transition:3s ;
+        transition:2s ;
         text-align: center;
        
         
@@ -327,7 +327,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:500px;
+        margin-top:450px;
     
     }
     .cards{
@@ -338,7 +338,7 @@ top:120%;
         height:300px;
         margin:10px;
         padding:3px;
-        transition:3s ;
+        transition:2s ;
         
        
     }
@@ -373,7 +373,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:500px;
+        margin-top:450px;
        
     }
     .cards{
@@ -384,7 +384,7 @@ top:120%;
         height:500px;
         margin:10px;
         padding:3px;
-        transition:5s ;
+        transition:3s ;
         
        
     }
