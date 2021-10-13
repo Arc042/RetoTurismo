@@ -183,8 +183,7 @@ li {
     display: flex;
     width:100%;
     justify-content: center;
-    margin-top:30%;
-    
+    margin-top:500px;
     
 }
 .EnlaceLugar{
@@ -226,11 +225,11 @@ li {
 }
 #bprev {
     position: absolute;
-    top:120%;
+    top:110%;
 }
 #bnext{
     position: absolute;
-    top:120%;
+    top:110%;
 }
 #pag{
     width:5%;
@@ -251,7 +250,7 @@ top:120%;
     width:100%;
     justify-content: center;
     position: absolute;
-    top:117%;
+    top:109%;
     height:30px;
 }
 #pag.btn-primary:hover{
@@ -272,7 +271,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:30px;
+        margin-top:500px;
     
     }
     .central{
@@ -328,7 +327,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:30px;
+        margin-top:500px;
     
     }
     .cards{
@@ -374,7 +373,7 @@ top:120%;
         flex-direction: row;
         width:100%;
         justify-content: center;
-        margin-top:30px;
+        margin-top:500px;
        
     }
     .cards{
@@ -399,18 +398,18 @@ top:120%;
 
     #bprev {
         position: absolute;
-        top:105%;
+        top:104%;
     }
     #bnext{
         position: absolute;
-        top:105%;
+        top:104%;
     }
     .paginas{
         display:flex;
         width:100%;
         justify-content: center;
         position: absolute;
-        top:104%;
+        top:103%;
         height:30px;
     }
     span img{
