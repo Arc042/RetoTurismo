@@ -37,27 +37,45 @@ telefono.oninput = function() {
 document.getElementById("btnFormulario").onclick = function() {
 
   if (document.getElementById("name").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUN NOMBRE");
+    document.getElementById("error").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUN NOMBRE");*/
+  } else {
+    document.getElementById("error").style.display="none";
   }
 
   if(document.getElementById("apellido").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUN APELLIDO");
+    document.getElementById("error2").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUN APELLIDO");*/
+  }  else {
+    document.getElementById("error2").style.display="none";
   }
 
   if(document.getElementById("direccion").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUNA DIRECCIÓN");
+    document.getElementById("error3").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUNA DIRECCIÓN");*/
+  } else {
+    document.getElementById("error3").style.display="none";
   }
 
   if(document.getElementById("cp").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUN CODIGO POSTAL");
+    document.getElementById("error4").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUN CODIGO POSTAL");*/
+  } else {
+    document.getElementById("error4").style.display="none";
   }
 
   if(document.getElementById("ciudad").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUNA CIUDAD");
-  }
+    document.getElementById("error5").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUNA CIUDAD");*/
+  } else {
+    document.getElementById("error5").style.display="none";
+  } 
 
   if(document.getElementById("provincia").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUNA PROVINCIA");
+    document.getElementById("error6").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUNA PROVINCIA");*/
+  } else {
+    document.getElementById("error6").style.display="none";
   }
 
   /*Validacion del email*/
@@ -68,14 +86,19 @@ document.getElementById("btnFormulario").onclick = function() {
 
   if (emailRegex.test(correo.value)) {
       correocomprobacion=true;
+      document.getElementById("error7").style.display="none";
   } else {
       correocomprobacion=false;
-      alert("EMAIL NO VALIDO");
-  }
+      document.getElementById("error7").style.display="block";
+      /*alert("EMAIL NO VALIDO");*/
+  } 
 /*Fin validacion del email*/
 
   if(document.getElementById("telefono").value == "") {
-    alert("NO HAS INTRODUCIDO NINGUN TELEFONO");
+    document.getElementById("error8").style.display="block";
+    /*alert("NO HAS INTRODUCIDO NINGUN TELEFONO");*/
+  } else {
+    document.getElementById("error8").style.display="none";
   }
 }
 /*Fin funcion que valida si hay algo escrito o no*/
@@ -84,13 +107,30 @@ document.getElementById("btnFormulario").onclick = function() {
 document.getElementById("btnRestablecer").onclick = function() {
 
  document.getElementById("name").value="";
+ document.getElementById("error").style.display="none";
+
  document.getElementById("apellido").value='';
+ document.getElementById("error2").style.display="none";
+
  document.getElementById("direccion").value='';
+ document.getElementById("error3").style.display="none";
+
  document.getElementById("cp").value='';
+ document.getElementById("error4").style.display="none";
+
  document.getElementById("ciudad").value='';
+ document.getElementById("error5").style.display="none";
+
  document.getElementById("provincia").value='';
+ document.getElementById("error6").style.display="none";
+
  document.getElementById("email").value='';
+ document.getElementById("error7").style.display="none";
+
  document.getElementById("telefono").value='';
+ document.getElementById("error8").style.display="none";
+
  document.getElementById("respuesta").value='';
+
 /*Fin restablece lo que este escrito*/
 }
