@@ -138,6 +138,8 @@ flag4 = false
 console.log(infolugares)
 
 
+//funcion que redirige a lugar y que llame a la funcion que rellena la informacion de lugar
+
 
 function buscarLugar(lugarSeleccionado) {
 console.log(lugarSeleccionado);
