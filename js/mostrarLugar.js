@@ -131,6 +131,9 @@ Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa
 //variales para usar en el for
 rellenarHTML = ""
 flag = false
+flag2 = false
+flag3 = false
+flag4 = false
 
 console.log(infolugares)
 
@@ -157,11 +160,108 @@ for (i = 0; i < infolugares.length && flag == false ; i++) {
 rellenarHTML= ''
 if (lugarSeleccionado == infolugares[i][0]) {
   flag = true
+  /*Lugares de interes*/
+  var jsinteresa = ''
+  for (let j = 2; j < infolugares[i].length; j++) {
+    
+    if (j % 2 == 0) {
+      
+      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard('+infolugares[i][j]+')"">'+infolugares[i][j]+'</a>';
+      /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
+      /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
+    }
+    
+  }
+  /*var img = document.getElementsByClassName('lugar_interes') 
+    for (let l = 2; l < infolugares[i].length; l++) {
+               
+      if (l % 2 == 0 && img.value==infolugares[i][l]) {
+        var jsinteresimg = jsinteresimg+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
+        /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
+        /*+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'*/
+     /* }
+                
+    }
+    var nombre = document.getElementsByClassName('lugar_interes')
+    for (let k = 2; k < infolugares[i].length; k++) {
+      
+      /*if (k % 2 == 1 ) {
+
+        var jsinterescardnombre = nombre.value;
+
+        /*document.getElementById('card_interes').innerHTML = 
+        +'<h5 class="card-title">'+nombre.value+'</h5>'
+        +'<p class="card-text">'+Textolugar+'</p>'
+        +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+        ;*/
+        
+        /*+'<h5 class="card-title">'+nombre.value+'</h5>'
+        +'<p class="card-text">'+Textolugar+'</p>'
+        +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
+        
+      /*}
+      
+    }*/
+    /*Carousel*/
+    for (let k = 2; k < infolugares[i].length; k++) {
+      
+      if (k % 2 == 0 && flag2 == false) {
+        flag2=true;
+        var jsinterescarouselnombre1 = infolugares[i][k];
+        var jsinterescarouselnombre2 = infolugares[i][k+2];
+        var jsinterescarouselnombre3 = infolugares[i][k+4];
+        console.log(infolugares[i][k])
+        console.log(infolugares[i][k+2])
+        console.log(infolugares[i][k+4])
+      }
+
+      if (k % 2 == 1 && flag3 == false) {
+        flag3=true;
+        var jsinterescarouselimg1 = infolugares[i][k];
+        var jsinterescarouselimg2 = infolugares[i][k+2];
+        var jsinterescarouselimg3 = infolugares[i][k+4];
+        console.log(infolugares[i][k])
+        console.log(infolugares[i][k+2])
+        console.log(infolugares[i][k+4])
+      }
+      /*var jsinterescarousel1 = 
+      '<img src="'+jsinterescarouselimg1+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
+      +'<div class="carousel-caption d-none d-md-block">'
+          +'<h5 class="text-white">'+jsinterescarouselnombre1+'</h5>'
+          +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
+      +'</div>'
   
+      var jsinterescarousel2 = 
+      '<img src="'+jsinterescarouselimg2+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
+      +'<div class="carousel-caption d-none d-md-block">'
+          +'<h5 class="text-white">'+jsinterescarouselnombre2+'</h5>'
+          +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
+      +'</div>'
   
+        var jsinterescarousel3 = 
+        '<img src="'+jsinterescarouselimg3+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
+        +'<div class="carousel-caption d-none d-md-block">'
+            +'<h5 class="text-white">'+jsinterescarouselnombre3+'</h5>'
+            +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
+        +'</div>'
+    
+
+        /*'<div class="carousel-item active" data-bs-interval="10000">'
+            '<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+            '<div class="carousel-caption d-none d-md-block">'
+                '<h5 class="text-white">First slide label</h5>'
+                '<p class="text-white">Some representative placeholder content for the first slide.</p>'
+            '</div>'
+        '</div>'*/
+        
+      
+      
+    }
+
+
   //agregar todo el html del contenedor principal
   rellenarHTML = '<!-- Banner -->'
-  +'<div class="p-5 text-center bg-image banner" >'
+  +'<div class="p-5 text-center bg-image banner" style="background-image: url('+infolugares[i][1]+');">'
    +' <div class="mask" >'
     +'  <div class="d-flex justify-content-center align-items-center h-100">'
      +'   <div class="text-white banner_text">'
@@ -193,57 +293,60 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'<br>'
     +'<div class="d-flex flex-row mapa">'
       +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
-        for (let j = 2; j < infolugares[i].length; j++) {
-          
+      +jsinteresa+
+        /*for (let j = 2; j < infolugares[i].length; j++) {
+          console.log('for1')
           if (i % 2 == 0) {
+            console.log('if1')*/
             /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
-            +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';
-          }
+            /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+jsinteresa+'">'+jsinteresa+'</a>'*/
+          /*}
           
-        }
+        }*/
         +'<br>'
       +'</div>'
-      +'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'
-        +'<div class="card mb-3" style="max-width: 540px;">'
+      +'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" id="lugar_card" >'
+        /*+'<div class="card mb-3" style="max-width: 540px;">'
           +'<div class="row g-0">'
             +'<div class="col-md-4 interes_img">'
-              var img = document.getElementsByClassName('lugar_interes') 
+            
+              /*var img = document.getElementsByClassName('lugar_interes') 
               for (let l = 2; l < infolugares[i].length; l++) {
                
-                if (l % 2 == 0 && img.value==infolugares[i][l]) {
+                if (l % 2 == 0 && img.value==infolugares[i][l]) {*/
                   /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-                  +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
-                }
+                  /*+'<img src="'+jsinteresimg+'" class="img-fluid rounded-start" alt="...">'*/
+                /*}
                 
-              }
-              +'<img src="..." class="img-fluid rounded-start" alt="...">'
-            +'</div>'
+              }*/
+              /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
+            /*+'</div>'
             +'<div class="col-md-8">'
               +'<div class="card-body card_interes">'//for con info lugares de interes
-                var nombre = document.getElementsByClassName('lugar_interes')
+                /*var nombre = document.getElementsByClassName('lugar_interes')
                 for (let k = 2; k < infolugares[i].length; k++) {
                   
-                  if (k % 2 == 1 ) {
+                  if (k % 2 == 1 ) {*/
                     /*document.getElementById('card_interes').innerHTML = 
                     +'<h5 class="card-title">'+nombre.value+'</h5>'
                     +'<p class="card-text">'+Textolugar+'</p>'
                     +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
                     ;*/
                     
-                    +'<h5 class="card-title">'+nombre.value+'</h5>'
+                    /*+'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
                     +'<p class="card-text">'+Textolugar+'</p>'
-                    +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                    +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
                     
-                  }
+                  /*}
                   
-                }
-                +'<h5 class="card-title">Card title</h5>'
+                }*/
+                /*+'<h5 class="card-title">Card title</h5>'
                 +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
-                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-              +'</div>'
+                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
+              /*+'</div>'
             +'</div>'
           +'</div>'
-        +'</div>'
+        +'</div>'*/
       +'</div>'
     +'</div>'
   +'</div>'
@@ -261,24 +364,28 @@ if (lugarSeleccionado == infolugares[i][0]) {
             +'aria-label="Slide 3"></button>'
     +'</div>'
     +'<div class="carousel-inner">'
+          /*+jsinterescarousel+*/
         +'<div class="carousel-item active" data-bs-interval="10000">'
-            +'<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+        /*+jsinterescarousel1+*/
+            +'<img src="'+jsinterescarouselimg1+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
             +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">First slide label</h5>'
+                +'<h5 class="text-white">'+jsinterescarouselnombre1+'</h5>'
                 +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
             +'</div>'
         +'</div>'
         +'<div class="carousel-item" data-bs-interval="2000">'
-            +'<img src="../imgs/imgLugar/barcelona/barcelonaBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+        /*+jsinterescarousel2+*/
+            +'<img src="'+jsinterescarouselimg2+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
             +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">Second slide label</h5>'
+                +'<h5 class="text-white">'+jsinterescarouselnombre2+'</h5>'
                 +'<p class="text-white">Some representative placeholder content for the second slide.</p>'
             +'</div>'
         +'</div>'
         +'<div class="carousel-item">'
-            +'<img src="../imgs/imgLugar/baleares/balearesBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
+        /*+jsinterescarousel3+*/
+            +'<img src="'+jsinterescarouselimg3+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
             +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">Third slide label</h5>'
+                +'<h5 class="text-white">'+jsinterescarouselnombre3+'</h5>'
                 +'<p class="text-white">Some representative placeholder content for the third slide.</p>'
             +'</div>'
         +'</div>'
@@ -302,4 +409,98 @@ console.log(rellenarHTML);
 document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
 //document.write(rellenarHTML)
 console.log("fin");
+}
+
+
+
+function rellernarinfocard(params) {
+
+
+
+  for (i = 0; i < infolugares.length && flag4 == false; i++) {
+
+    rellenarCARD = ''
+    if (params == infolugares[i][0]) {
+      flag4 = true
+      /*Lugares de interes*/
+      var jsinteresa = ''
+      
+      for (let l = 2; l < infolugares[i].length; l++) {
+
+        if (l % 2 == 0 ) {
+          var jsinteresimg = '<img src="' + infolugares[i][l] + '" class="img-fluid rounded-start" alt="...">'
+          /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
+          /*+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'*/
+        }
+
+      }
+      var nombre = document.getElementsByClassName('lugar_interes')
+      for (let k = 2; k < infolugares[i].length; k++) {
+
+        if (k % 2 == 1) {
+
+          var jsinterescardnombre = nombre.value;
+
+          /*document.getElementById('card_interes').innerHTML = 
+          +'<h5 class="card-title">'+nombre.value+'</h5>'
+          +'<p class="card-text">'+Textolugar+'</p>'
+          +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+          ;*/
+
+          /*+'<h5 class="card-title">'+nombre.value+'</h5>'
+          +'<p class="card-text">'+Textolugar+'</p>'
+          +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
+
+        }
+
+      }
+    }
+
+    rellenarCARD = /*+'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'*/
+       '<div class="card mb-3" style="max-width: 540px;">'
+      + '<div class="row g-0">'
+      + '<div class="col-md-4 interes_img">'
+
+      /*var img = document.getElementsByClassName('lugar_interes') 
+      for (let l = 2; l < infolugares[i].length; l++) {
+       
+        if (l % 2 == 0 && img.value==infolugares[i][l]) {*/
+      /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
+      + '<img src="' + jsinteresimg + '" class="img-fluid rounded-start" alt="...">'
+      /*}
+      
+    }*/
+      /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
+      + '</div>'
+      + '<div class="col-md-8">'
+      + '<div class="card-body card_interes">'//for con info lugares de interes
+      /*var nombre = document.getElementsByClassName('lugar_interes')
+      for (let k = 2; k < infolugares[i].length; k++) {
+        
+        if (k % 2 == 1 ) {*/
+      /*document.getElementById('card_interes').innerHTML = 
+      +'<h5 class="card-title">'+nombre.value+'</h5>'
+      +'<p class="card-text">'+Textolugar+'</p>'
+      +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+      ;*/
+
+      + '<h5 class="card-title">' + jsinterescardnombre + '</h5>'
+      + '<p class="card-text">' + Textolugar + '</p>'
+      + '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+
+      /*}
+      
+    }*/
+      /*+'<h5 class="card-title">Card title</h5>'
+      +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
+      +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
+      + '</div>'
+      + '</div>'
+      + '</div>'
+      + '</div>'
+      + '</div>'
+
+  }
+  console.log(rellenarCARD);
+  document.getElementById('lugar_card').innerHTML= rellenarCARD;
 }
