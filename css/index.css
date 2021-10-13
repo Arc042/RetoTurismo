@@ -20,6 +20,63 @@ body{
     z-index: 1;
 }
 
+/*Da el diseño al dropdown de LUGARES*/
+.drowpdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.primero{
+    display: flex;
+    flex-direction: row;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: row;
+}
+
+.tercero{
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  width: 700px;
+}
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+   }
+
+/**/
+
 /*Carrusel, da tamaño a las imagenes y posiciona en el fondo las imagenes*/
 #carrusel{
     width: 100%;
@@ -38,10 +95,15 @@ body{
 /*Este es nuestro navegador*/
 .container_header{
     background-color: white;
+    color: red;
     position: absolute;   
     z-index: 2;
     margin-top: 10%;
     width: 100%;
+}
+.hola{
+    background-color: red;
+    margin-top: 1000px;
 }
 /*Fin navegador*/
 
@@ -125,7 +187,11 @@ body{
     
     
 }
-.cards{
+.EnlaceLugar{
+    list-style-type: none;
+    color: white;
+}
+    .cards{
     display:flex;
     flex-direction: column;
     justify-items: center;
@@ -137,12 +203,13 @@ body{
     position: relative;
    
 }
-.cards img{
+ .cards img{
     position: relative;
     width:100%;
     height:100%;
     box-shadow: 5px 5px 3px black, 10px 10px 8px, 15px 15px 8px;
 }
+ 
 .cards h3{
     color: rgb(253, 244, 244);
     position:absolute;

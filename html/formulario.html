@@ -10,51 +10,71 @@
 <body>
     <br>
   <br>
-  <!--Este es el header-->
-  <div class="header">
+   <!--Este es el header-->
+   <div class="header">
+
     <!--Este es nuestro navegador-->
     <div class="container_header position-absolute top-30 start-50 translate-middle">
-      <header class="d-flex justify-content-center py-3 ">
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="lugar.html" class="nav-link " >Lugares</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-          <li class="nav-item"><a href="formulario.html" class="nav-link active">Contacto</a></li>
-        </ul>
-      </header>
+        <header class="d-flex justify-content-center py-3 ">
+            <ul class="nav nav-pills"><!-- navegador que redirecciona a las distintas paginas -->
+                <li class="nav-item"><a href="../html/index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="../html/lugar.html" class="nav-link">Lugares</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                <li class="nav-item"><a href="../html/formulario.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </header>
     </div>
-  </div>
-    
+    <!-- fin del navegador -->
+  </div><!--fin del header-->
+   
+  
   <!--Formulario-->
     <div class="container-fluid px-1 py-5 mx-auto" id="formulario"> 
         <div class="row d-flex justify-content-center">
             <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
                 <h3 class="prueba">Datos Personales</h3>
                 <div class="card">
-                    <form class="form-card" id="basic-form">
+                    <form class="form-card" id="basic-form"><!--inicio de los campos a rellenar-->
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con nombre -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="name" name="name" placeholder="Escribe tu nombre" onkeypress=" return soloLetras(event)"> </div>
+                            <!-- campo con apellido -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> *</span></label> <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" onkeypress="return soloLetras(event)"> </div>
                         </div> 
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con direccion -->
                             <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Dirección<span class="text-danger"> *</span></label> <input type="text" id="direccion" name="direccion" > </div>
                         </div>
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con codigo postal -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="1" max="999999999999"> </div>
+                            <!-- campo con ciudad -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Ciudad<span class="text-danger"> *</span></label> <input type="text" id="ciudad" name="ciudad" onkeypress="return soloLetras(event)"> </div>
                         </div>
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con provincia -->
                             <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Provincia<span class="text-danger"> *</span></label> <input type="text" id="provincia" name="provincia" placeholder="" onkeypress="return soloLetras(event)"> </div>
                         </div>
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con email -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" > </div>
+                            <!-- campo con telefono -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" > </div>
                         </div>
+
                         <div class="row justify-content-between text-left">
+                            <!-- campo con mensaje -->
                             <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Danos tu feedback<span class="text-danger"></span></label> <input type="text" id="respuesta" name="respuesta" > </div>
                         </div>
+
                         <div class="row justify-content-end">
+                            <!-- botones para enviar o borrar informacion -->
                             <div class="form-group"> <button type="button" id="btnFormulario">Enviar</button> </div>
                             <div class="form-group"> <button type="button" id="btnRestablecer">Restablecer</button> </div>
                         </div>
