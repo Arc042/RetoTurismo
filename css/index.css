@@ -35,10 +35,15 @@ body{
 /*Este es nuestro navegador*/
 .container_header{
     background-color: white;
+    color: red;
     position: absolute;   
     z-index: 2;
     margin-top: 10%;
     width: 100%;
+}
+.hola{
+    background-color: red;
+    margin-top: 1000px;
 }
 /*Fin navegador*/
 
