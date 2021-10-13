@@ -34,7 +34,7 @@ telefono.oninput = function() {
 /*Fin funcion para que los valores del CP y de Telefono no sobrepasen un limite numerico*/
 
 /*Funcion que valida si hay algo escrito o no*/
-document.getElementById("formulario").onclick = function() {
+document.getElementById("btnFormulario").onclick = function() {
 
   if (document.getElementById("name").value == "") {
     alert("NO HAS INTRODUCIDO NINGUN NOMBRE");
@@ -77,13 +77,13 @@ document.getElementById("formulario").onclick = function() {
   if(document.getElementById("telefono").value == "") {
     alert("NO HAS INTRODUCIDO NINGUN TELEFONO");
   }
-
 }
 /*Fin funcion que valida si hay algo escrito o no*/
 
-document.getElementById("formulario").onclick = function() {
+/*Restablece lo que este escrito*/
+document.getElementById("btnRestablecer").onclick = function() {
 
- document.getElementById("nombre").value='';
+ document.getElementById("name").value="";
  document.getElementById("apellido").value='';
  document.getElementById("direccion").value='';
  document.getElementById("cp").value='';
@@ -92,5 +92,5 @@ document.getElementById("formulario").onclick = function() {
  document.getElementById("email").value='';
  document.getElementById("telefono").value='';
  document.getElementById("respuesta").value='';
-
+/*Fin restablece lo que este escrito*/
 }
