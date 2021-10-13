@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <br>
+  <br>
+  <!--Este es el header-->
+  <div class="header">
+    <!--Este es nuestro navegador-->
+    <div class="container_header position-absolute top-30 start-50 translate-middle">
+      <header class="d-flex justify-content-center py-3 ">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="lugar.html" class="nav-link " >Lugares</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Precios</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+          <li class="nav-item"><a href="formulario.html" class="nav-link active">Contacto</a></li>
+        </ul>
+      </header>
+    </div>
+  </div>
+    
+  <!--Formulario-->
+    <div class="container-fluid px-1 py-5 mx-auto" id="formulario"> 
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3 class="prueba">Datos Personales</h3>
+                <div class="card">
+                    <form class="form-card" id="basic-form">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre<span class="text-danger"> *</span></label> <input type="text" id="name" name="name" placeholder="Escribe tu nombre" onkeypress=" return soloLetras(event)"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellido<span class="text-danger"> *</span></label> <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" onkeypress="return soloLetras(event)"> </div>
+                        </div> 
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Dirección<span class="text-danger"> *</span></label> <input type="text" id="direccion" name="direccion" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="1" max="999999999999"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Ciudad<span class="text-danger"> *</span></label> <input type="text" id="ciudad" name="ciudad" onkeypress="return soloLetras(event)"> </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-12 flex-column d-flex"> <label class="form-control-label px-3">Provincia<span class="text-danger"> *</span></label> <input type="text" id="provincia" name="provincia" placeholder="" onkeypress="return soloLetras(event)"> </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-12 flex-column d-flex"> <label class="form-control-label px-3">Danos tu feedback<span class="text-danger"></span></label> <input type="text" id="respuesta" name="respuesta" > </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="form-group"> <button type="button" id="btnFormulario">Enviar</button> </div>
+                            <div class="form-group"> <button type="button" id="btnRestablecer">Restablecer</button> </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Formulario-->
+
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+
+<script src="../js/formulario.js"></script>
+</body>
+</html>
