@@ -161,7 +161,7 @@ for (i = 0; i < infolugares.length && flag == false ; i++) {
 
 
 }
-console.log("fin")
+console.log("fin");
 
 
 
@@ -173,13 +173,6 @@ console.log("fin")
 
 
 
-
-
-idiomas=document.querySelectorAll("a");
-for (let i = 0; i < idiomas.length; i++) {
-    console.log(a);
-    
-}
 
 
 
