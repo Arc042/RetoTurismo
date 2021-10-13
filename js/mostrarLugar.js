@@ -152,6 +152,55 @@ console.log(lugarSeleccionado2);*/
 //mientras que el resto de posiciones pares van a ser el nombre del lugar y las impares la imagen del card
 //crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
 
+
+for (i = 0; i < infolugares.length && flag == false ; i++) {
+
+    if (lugarSeleccionado == infolugares[i][0]) {
+        flag = true
+        
+        //agregar todo el html del contenedor principal
+        rellenarHTML = "html"
+
+    }    
+
+
+}
+console.log("fin");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     for (i = 0; i < infolugares.length && flag == false ; i++) {
       
       rellenarHTML= ''
@@ -295,6 +344,7 @@ console.log(lugarSeleccionado2);*/
             +'<!-- Fin Carousel -->'
             
         }    
+
 
 
     }
