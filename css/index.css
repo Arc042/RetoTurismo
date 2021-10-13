@@ -4,7 +4,11 @@ body{
  position: static;
 }
 
+#lugarHover{
+    display: none;
+}
 
+#logarHover
 
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
@@ -15,7 +19,6 @@ body{
     position: relative;
     z-index: 1;
 }
-
 
 /*Carrusel, da tamaño a las imagenes y posiciona en el fondo las imagenes*/
 #carrusel{
