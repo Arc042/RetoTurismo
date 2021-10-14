@@ -18,9 +18,9 @@
         <!--menu de cambio de idioma-->
         <nav class="idiomas position-absolute top-0 end-0" id="idioma">
             <!-- <a> que llama a la funcion que cambia el idioma -->
-            <a href="#" class="idiomaColor">ES</a>
-            <a href="#" class="idiomaColor" >EUS</a>
-            <a href="#" class="idiomaColor" >EN</a>
+            <a href="#" class="idiomaColor" onclick="cambioIdioma(1)">ES</a>
+            <a href="#" class="idiomaColor" onclick="cambioIdioma(2)">EUS</a>
+            <a href="#" class="idiomaColor" onclick="cambioIdioma(3)">EN</a>
         </nav>
 
         <!--Este es nuestro navegador-->
@@ -96,18 +96,18 @@
         <div class="carousel-item active ">
             <div class="container-fluid">
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
+                <a class="EnlaceLugar" href="../html/lugar.html">
                     <div class="cards lugar" onclick="buscarLugar('Bilbao')">
-                        <img src="/imgs/imgCard/bilbao-small2.jpg" class="img-fluid" alt="...">
+                        <img src="../imgs/imgCard/bilbao-small2.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>BILBAO</h3>
                         </div>
                     </div>
                 </a>
-
+                
                 <a class="EnlaceLugar" href="/html/lugar.html">
                     <div class="cards lugar" onclick="buscarLugar('Madrid')">
-                        <img src="/imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
+                        <img src="../imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>MADRID</h3>
                         </div>
@@ -228,10 +228,9 @@
 
 </div>
 
-
+    <!-- contenedor con cambio de idioma -->
     <div class="text-center mt-4" id="texto">
-
-        <h3 class="module-title ">THE SPAIN ROUTE · DE RUTA POR ESPAÑA</h3>
+        <h3 class="module-title ">DE RUTA POR ESPAÑA</h3>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
             <path fill-rule="evenodd" d="M4.5 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H5.25a.75.75 0 01-.75-.75z">
             </path>
@@ -240,8 +239,6 @@
             mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje espectacular?
             <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .
         </p>
-
-
     </div>
 
     <!--Elementos del centro-->
@@ -253,7 +250,7 @@
                 <div class="col">
                     <div class="card" style="width: 17rem; border: none;">
                         <img src="/imgs/cardFotos/viaje.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
+                        <div class="card-body" id="texto1">
                             <h5 class="card-title">DESCUBRE</h5>
                         </div>
                     </div>
@@ -261,7 +258,7 @@
                 <div class="col">
                     <div class="card" style="width: 17rem; border: none;">
                         <img src="/imgs/cardFotos/vive.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
+                        <div class="card-body" id="texto2">
                             <h5 class="card-title">VIVE</h5>
                         </div>
                     </div>
@@ -269,7 +266,7 @@
                 <div class="col">
                     <div class="card" style="width: 17rem; border: none;">
                         <img src="/imgs/cardFotos/lago.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
+                        <div class="card-body" id="texto3">
                             <h5 class="card-title">RECOMIENDA</h5>
                         </div>
                     </div>
@@ -277,7 +274,7 @@
                 <div class="col">
                     <div class="card" style="width: 17rem; border: none;">
                         <img src="/imgs/cardFotos/vuelve.jpg" class="card-img-top" id="imgCirculo">
-                        <div class="card-body">
+                        <div class="card-body" id="texto4">
                             <h5 class="card-title">VUELVE</h5>
                         </div>
                     </div>
@@ -424,7 +421,7 @@
 </footer>
 
 <!-- scripts -->
-<script src="../js/idiomas.js" type="text/javascript"></script>
+<script src="../js/idiomas.js"></script>
 <script src="../js/mostrarLugar.js"></script>
 
 </html>
