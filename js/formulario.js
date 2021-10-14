@@ -38,43 +38,43 @@ document.getElementById("btnFormulario").onclick = function() {
 
   if (document.getElementById("name").value == "") {
     document.getElementById("error").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUN NOMBRE");*/
   } else {
+    var name = true;
     document.getElementById("error").style.display="none";
   }
 
   if(document.getElementById("apellido").value == "") {
     document.getElementById("error2").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUN APELLIDO");*/
   }  else {
+    var apellido = true;
     document.getElementById("error2").style.display="none";
   }
 
   if(document.getElementById("direccion").value == "") {
     document.getElementById("error3").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUNA DIRECCIÓN");*/
   } else {
+    var direccion = true;
     document.getElementById("error3").style.display="none";
   }
 
   if(document.getElementById("cp").value == "") {
     document.getElementById("error4").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUN CODIGO POSTAL");*/
   } else {
+    var cp = true;
     document.getElementById("error4").style.display="none";
   }
 
   if(document.getElementById("ciudad").value == "") {
     document.getElementById("error5").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUNA CIUDAD");*/
   } else {
+    var ciudad = true;
     document.getElementById("error5").style.display="none";
   } 
 
   if(document.getElementById("provincia").value == "") {
     document.getElementById("error6").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUNA PROVINCIA");*/
   } else {
+    var provincia = true;
     document.getElementById("error6").style.display="none";
   }
 
@@ -96,9 +96,38 @@ document.getElementById("btnFormulario").onclick = function() {
 
   if(document.getElementById("telefono").value == "") {
     document.getElementById("error8").style.display="block";
-    /*alert("NO HAS INTRODUCIDO NINGUN TELEFONO");*/
   } else {
+    var telefono = true;
     document.getElementById("error8").style.display="none";
+  }
+
+
+  if (name == true && apellido == true && direccion == true && cp == true && ciudad == true && provincia == true && correocomprobacion == true && telefono == true) {
+    document.getElementById("name").value="";
+    document.getElementById("error").style.display="none";
+   
+    document.getElementById("apellido").value='';
+    document.getElementById("error2").style.display="none";
+   
+    document.getElementById("direccion").value='';
+    document.getElementById("error3").style.display="none";
+   
+    document.getElementById("cp").value='';
+    document.getElementById("error4").style.display="none";
+   
+    document.getElementById("ciudad").value='';
+    document.getElementById("error5").style.display="none";
+   
+    document.getElementById("provincia").value='';
+    document.getElementById("error6").style.display="none";
+   
+    document.getElementById("email").value='';
+    document.getElementById("error7").style.display="none";
+   
+    document.getElementById("telefono").value='';
+    document.getElementById("error8").style.display="none";
+   
+    document.getElementById("respuesta").value='';
   }
 }
 /*Fin funcion que valida si hay algo escrito o no*/
