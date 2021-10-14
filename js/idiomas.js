@@ -6,6 +6,7 @@ numEnlc=0;
 
  for (let i = 0; i < enlaces.length; i++) {
     console.log(enlaces);
+    console.log(enlaces[i].id);
   enlaces[i].addEventListener("click", function(){
   cambioIdioma(i);
   });
@@ -15,7 +16,7 @@ numEnlc=0;
 
 function cambioIdioma(i) {
     numEnlc=i;
-    console.log(enlaces[i]);
+
     if (enlaces[i].value=='ES'){
         alert("ADIOS");
     document.querySelector(".texto").innerHTML ="DE RUTA POR ESPAÑAaaaaaaaaaaaaaa";
