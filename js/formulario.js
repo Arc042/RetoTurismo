@@ -128,6 +128,8 @@ document.getElementById("btnFormulario").onclick = function() {
     document.getElementById("error8").style.display="none";
    
     document.getElementById("respuesta").value='';
+
+    alert("¡Formulario enviado correctamente!")
   }
 }
 /*Fin funcion que valida si hay algo escrito o no*/
