@@ -101,7 +101,7 @@ document.getElementById("btnFormulario").onclick = function() {
     document.getElementById("error8").style.display="none";
   }
 
-
+  /*Valida si esta todo bien, en caso de estar todo bien lo envia correctamente*/
   if (name == true && apellido == true && direccion == true && cp == true && ciudad == true && provincia == true && correocomprobacion == true && telefono == true) {
     document.getElementById("name").value="";
     document.getElementById("error").style.display="none";
@@ -131,6 +131,7 @@ document.getElementById("btnFormulario").onclick = function() {
 
     alert("¡Formulario enviado correctamente!")
   }
+  /*Fin validacion enviar si esta bien*/
 }
 /*Fin funcion que valida si hay algo escrito o no*/
 
