@@ -125,6 +125,22 @@ infolugares=[/*Baleares*/
    "Iglesia de San Pablo de Zaragoza","../imgs/imgLugar/zaragoza/zaragoza(sanpablo).jpg",
    "Iglesia de Santa Engracia","../imgs/imgLugar/zaragoza/zaragoza(santaengracia).jpg",
    "Puente del Tercer Milenio","../imgs/imgLugar/zaragoza/zaragoza(tercermilenio).jpg"]]
+
+//Array para el fondo de pantalla
+mapaFondo=[
+['Baleares','../imgs/map/BalearesMap.PNG'],
+['Barcelona','../imgs/map/BarcelonaMap.PNG'],
+['Bilbao','../imgs/map/BilbaoMap.PNG'],
+['Canarias','../imgs/map/CanariasMap.PNG'],
+['Madrid','../imgs/map/MadridsMap.PNG'],
+['Malaga','../imgs/map/MalagaMap.PNG'],
+['Santander','../imgs/map/SantanderMap.PNG'],
+['Santiago de Compostela','../imgs/map/SantiagoMap.PNG'],
+['Sevilla','../imgs/map/SevillaMap.PNG'],
+['Valencia','../imgs/map/ValenciaMap.PNG'],
+['Zaragoza','../imgs/map/ZaragozaMap.PNG']
+]
+
 //texto de ejemplo
 TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
 Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa mollitia libero illo impedit laboriosam alias provident. Consequatur earum, provident soluta veniam nobis, quos, iusto sit nihil accusantium tempore quaerat."
