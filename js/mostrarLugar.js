@@ -141,9 +141,18 @@ mapaFondo=[
 ['Zaragoza','../imgs/map/ZaragozaMap.PNG']
 ]
 
+window.addEventListener('DOMContentLoaded',(event)=>{
+  var lugarSeleccionado = document.URL.split('=')[1]
+  // console.log(sitio)
+
+  buscarLugar(lugarSeleccionado)
+
+});
+
 //texto de ejemplo
 TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
 Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa mollitia libero illo impedit laboriosam alias provident. Consequatur earum, provident soluta veniam nobis, quos, iusto sit nihil accusantium tempore quaerat."
+
 //variales para usar en el for
 rellenarHTML = ""
 flag = false
@@ -184,7 +193,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     
     if (j % 2 == 0) {
       
-      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard('+infolugares[i][j]+')"">'+infolugares[i][j]+'</a>';
+      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard("'+infolugares[i][j]+'")">'+infolugares[i][j]+'</a>';
       /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
       /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
     }
@@ -429,11 +438,14 @@ document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
 console.log("fin");
 }
 
+function rellernarinfocard(x) {
+  console.log('cardddddddd');
+  console.log(x);
+}
 
+function rellernarinfocard2(params) {
 
-function rellernarinfocard(params) {
-
-
+console.log('carddddddd')
 
   for (i = 0; i < infolugares.length && flag4 == false; i++) {
 
