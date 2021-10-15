@@ -424,6 +424,10 @@ top:120%;
         margin-top:450px;
        
     }
+    .idiomas{
+       opacity: 0;
+       
+    }
     .cards{
         display:flex;
         flex-direction: column;
