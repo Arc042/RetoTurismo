@@ -28,7 +28,7 @@
             <header class="d-flex justify-content-center py-3 ">
                 <ul class="nav nav-pills"><!-- navegador que redirecciona a las distintas paginas -->
                     <li class="nav-item"><a href="../html/index.html" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="../html/lugar.html" class="nav-link">Lugares</a>
+                    <li class="nav-item" id="prueba"><a href="../html/lugar.html" class="nav-link">Lugares</a>
                         <ul class="dropdown">
                             <div class="primero">
                                 <li><a href="#">Baleares</a></li>
@@ -96,17 +96,17 @@
         <div class="carousel-item active ">
             <div class="container-fluid">
 
-                <a class="EnlaceLugar" href="../html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Bilbao')">
+                <a class="EnlaceLugar" href="../html/lugar.html?lugar=Bilbao">
+                    <div class="cards lugar">
                         <img src="../imgs/imgCard/bilbao-small2.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>BILBAO</h3>
                         </div>
                     </div>
-                </a>
+                <!-- </a> -->
                 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Madrid')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Madrid">
+                    <div class="cards lugar">
                         <img src="../imgs/imgCard/cibeles.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>MADRID</h3>
@@ -114,8 +114,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Sevilla')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Sevilla">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/plaza españa.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>SEVILLA</h3>
@@ -123,8 +123,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Malaga')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Malaga">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/Castillo de la Estrella, Teba (Javier Flores) 2.jpg"
                             class="img-fluid" alt="...">
                         <div>
@@ -140,8 +140,8 @@
         <div class="carousel-item">
             <div class="container-fluid">
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Valencia')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Valencia">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/valencia-ciudad-artes-ciencias.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>VALENCIA</h3>
@@ -149,8 +149,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Santander')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Santander">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/centro-botin2.JPG" class="img-fluid" alt="...">
                         <div>
                             <h3>SANTANDER</h3>
@@ -158,8 +158,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Canarias')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Canarias">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/Dunas-Maspalomas.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>GRAN CANARIA</h3>
@@ -167,8 +167,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Barcelona')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Barcelona">
+                    <div class="cards lugar">
                         <img src="/imgs/imgLugar/barcelona/barcelona(campnou).jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>BARCELONA</h3>
@@ -182,8 +182,8 @@
         <div class="carousel-item">
             <div class="container-fluid">
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Mallorca')">
+                <a class="EnlaceLugar" href="/html/lugar.?lugar=?lugar=Mallorca">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/soller_Mallorca2.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>MALLORCA</h3>
@@ -191,8 +191,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Zaragoza')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Zaragoza">
+                    <div class="cards lugar">
                         <img src="/imgs/imgCard/el pilar.jpg" class="img-fluid" alt="...">
                         <div>
                             <h3>ZARAGOZA</h3>
@@ -200,8 +200,8 @@
                     </div>
                 </a>
 
-                <a class="EnlaceLugar" href="/html/lugar.html">
-                    <div class="cards lugar" onclick="buscarLugar('Santiago de Compostela')">
+                <a class="EnlaceLugar" href="/html/lugar.html?lugar=Santiago de Compostela">
+                    <div class="cards lugar">
                         <img src="/imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg"
                             class="img-fluid" alt="...">
                         <div>
@@ -209,8 +209,6 @@
                         </div>
                     </div>
                 </a>
-
-
             </div>
         </div>
 
