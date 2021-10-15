@@ -21,13 +21,13 @@ function soloLetras(e) {
 
 /*Funcion para que los valores del CP y de Telefono no sobrepasen un limite numerico*/
 cp.oninput = function() {
-  if (this.value.length > 5) {
+  if (this.value.length > 5 && this.value.length < 0) {
     this.value = this.value.slice(0,5); 
   }
 }
 
 telefono.oninput = function() {
-  if (this.value.length > 9) {
+  if (this.value.length > 9 && this.value.length < 0) {
     this.value = this.value.slice(0,9); 
   }
 }
