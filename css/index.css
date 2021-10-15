@@ -237,11 +237,13 @@ li {
 }
 #bprev {
     position: absolute;
-    top:110%;
+    top:104%;
+    left:35%;
 }
 #bnext{
     position: absolute;
-    top:110%;
+    top:104%;
+    left:50%;
 }
 #pag{
     width:5%;
@@ -257,21 +259,15 @@ position: absolute;
 top:120%;
 }
 
-.paginas{
-    display:flex;
-    width:100%;
-    justify-content: center;
-    position: absolute;
-    top:109%;
-    height:30px;
-}
+
 #pag.btn-primary:hover{
     background-color:rgba(37, 169, 245, 0.877);
     border-color:rgba(37, 169, 245, 0.877);
 }
 #texto{
+    position: absolute;
     width:100%;
-    padding-top:180px;
+    top:100%;
     transition: 2s;
 }
 /*FINCARROUSEL DE TURISMO*/
@@ -367,6 +363,23 @@ top:120%;
         
        
     }
+    #bprev {
+        transition:2s;
+        position: absolute;
+        top:103%;
+        
+    }
+    #bnext{
+        transition:2s;
+        position: absolute;
+        top:103%;
+        left:50%;
+        
+    }
+    span img{
+        width:150px;
+        height:80%;
+    }
     .central{
         margin-top: 4%;
         width: 100%;
@@ -437,11 +450,14 @@ top:120%;
 
     #bprev {
         position: absolute;
-        top:104%;
+        top:102%;
+        transition:2s;
     }
     #bnext{
         position: absolute;
-        top:104%;
+        top:102%;
+        left:50%;
+        transition:2s;
     }
     .paginas{
         display:flex;
@@ -452,9 +468,11 @@ top:120%;
         height:30px;
     }
     span img{
-        width:110%;
+        transition:2s;
+        width:180px;
         height:80%;
     }
+
     .central{
         margin-top: 4%;
         width: 100%;
