@@ -23,15 +23,15 @@ body{
 
 
 /*Da el diseño al dropdown de LUGARES*/
-#prueba{
+#texto6{
     width: 75px;
 }
-
-.drowpdown{
-    display: flex;
-    flex-direction: column;
+.dropdown a{
+ text-decoration: none;
 }
-
+.dropdown a:hover{
+    color: black;
+   }
 .primero{
     display: flex;
     flex-direction: row;
@@ -73,7 +73,7 @@ li {
   visibility: visible;
   opacity: 1;
   display: block;
-  width: 500px;
+  width: 700px;
 }
    
    ul li ul li {
@@ -81,7 +81,6 @@ li {
      width: 100%;
    }
 
-/**/
 
 /*Carrusel, da tamaño a las imagenes y posiciona en el fondo las imagenes*/
 #carrusel{
@@ -410,6 +409,10 @@ top:120%;
         width:100%;
         justify-content: center;
         margin-top:450px;
+       
+    }
+    .idiomas{
+       opacity: 0;
        
     }
     .cards{

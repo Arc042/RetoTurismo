@@ -3,6 +3,18 @@ texto1=document.getElementById('texto1')
 texto2=document.getElementById('texto2')
 texto3=document.getElementById('texto3')
 texto4=document.getElementById('texto4')
+texto5=document.getElementById('texto5');
+texto6=document.getElementById('texto6');
+texto7=document.getElementById('texto7');
+texto8=document.getElementById('texto8');
+texto9=document.getElementById('texto9');
+texto10=document.getElementById('texto10');
+texto11=document.getElementById('texto11');
+texto12=document.getElementById('texto12');
+texto13=document.getElementById('texto13');
+texto14=document.getElementById('texto14');
+texto15=document.getElementById('texto15');
+texto16=document.getElementById('texto16');
 
 function cambioIdioma(num) {
 console.log(num)
@@ -14,6 +26,18 @@ console.log(num)
             texto2.innerHTML="<h5 class='card-title'>VIVE</h5>"
             texto3.innerHTML="<h5 class='card-title'>RECOMIENDA</h5>"
             texto4.innerHTML="<h5 class='card-title'>VUELVE</h5>"
+            texto5.innerHTML="<li class='nav-item'><a href='../html/index.html' class='nav-link active' aria-current='page'>Home</a></li>"
+            texto6.innerHTML="<li class='nav-item' id='texto6'><a href='../html/lugar.html' class='nav-link'>Lugares</a>"
+            texto7.innerHTML="<li class='nav-item' id='texto7'><a href='#' class='nav-link'>Precios</a></li>"
+            texto8.innerHTML="<li class='nav-item' id='texto8'><a href='#' class='nav-link'>FAQs</a></li>"
+            texto9.innerHTML="<li class='nav-item' id='texto9'><a href='../html/formulario.html' class='nav-link'>Contacto</a></li>"
+            texto10.innerHTML="<a href='#!' class='text-white' id='texto10'>Contacto</a>"
+            texto11.innerHTML="<a href='#!' class='text-white' id='texto11'>Conocemos</a>"
+            texto12.innerHTML="<a href='#!' class='text-white' id='texto12'>Mapa Web</a>"
+            texto13.innerHTML="<a href='#!' class='text-white' id='texto13'>Aviso Legal</a>"
+            texto14.innerHTML="<a href='#!' class='text-white' id='texto14>'Uso' de la informacion</a>"
+            texto15.innerHTML="<a href='#!' class='text-white' id='texto15'>Politica de Cookies</a>"
+            texto16.innerHTML="<a href='#!' class='text-white' id='texto16'>Accesibilidad</a>"
             break;
         
         case 2:
@@ -22,6 +46,18 @@ console.log(num)
             texto2.innerHTML="<h5 class='card-title'>BIZI</h5>"
             texto3.innerHTML="<h5 class='card-title'>GOMENDATU</h5>"
             texto4.innerHTML="<h5 class='card-title'>BUELTATU</h5>"
+            texto5.innerHTML="<li class='nav-item'><a href='../html/index.html' class='nav-link active' aria-current='page'>Etxea</a></li>"
+            texto6.innerHTML="<li class='nav-item' id='texto6'><a href='../html/lugar.html' class='nav-link'>Lekuak</a>"
+            texto7.innerHTML="<li class='nav-item' id='texto7'><a href='#' class='nav-link'>Prezioak</a></li>"
+            texto8.innerHTML="<li class='nav-item' id='texto8'><a href='#' class='nav-link'>FAQs</a></li>"
+            texto9.innerHTML="<li class='nav-item' id='texto9'><a href='../html/formulario.html' class='nav-link'>Kontaktatu</a></li>"
+            texto10.innerHTML="<a href='#!' class='text-white' id='texto10'>Kontaktatu</a>"
+            texto11.innerHTML="<a href='#!' class='text-white' id='texto11'>Ezagutu</a>"
+            texto12.innerHTML="<a href='#!' class='text-white' id='texto12'>Web Mapa</a>"
+            texto13.innerHTML="<a href='#!' class='text-white' id='texto13'>Legezko Abisua</a>"
+            texto14.innerHTML="<a href='#!' class='text-white' id='texto14>Informazioaren erabilera</a>"
+            texto15.innerHTML="<a href='#!' class='text-white' id='texto15'>Cookie Politika</a>"
+            texto16.innerHTML="<a href='#!' class='text-white' id='texto16'>Irisgarritasuna</a>"
             break;
 
         case 3:
@@ -30,6 +66,18 @@ console.log(num)
             texto2.innerHTML="<h5 class='card-title'>LIVE</h5>"
             texto3.innerHTML="<h5 class='card-title'>RECOMMEND</h5>"
             texto4.innerHTML="<h5 class='card-title'>COME BACK</h5>"
+            texto5.innerHTML="<li class='nav-item'><a href='../html/index.html' class='nav-link active' aria-current='page'>Home</a></li>"
+            texto6.innerHTML="<li class='nav-item' id='texto6'><a href='../html/lugar.html' class='nav-link'>Sites</a>"
+            texto7.innerHTML="<li class='nav-item' id='texto7'><a href='#' class='nav-link'>Prices</a></li>"
+            texto8.innerHTML="<li class='nav-item' id='texto8'><a href='#' class='nav-link'>FAQs</a></li>"
+            texto9.innerHTML="<li class='nav-item' id='texto9'><a href='../html/formulario.html' class='nav-link'>Contacts</a></li>"
+            texto10.innerHTML="<a href='#!' class='text-white' id='texto10'>Contacts</a>"
+            texto11.innerHTML="<a href='#!' class='text-white' id='texto11'>know us</a>"
+            texto12.innerHTML="<a href='#!' class='text-white' id='texto12'>Web Map</a>"
+            texto13.innerHTML="<a href='#!' class='text-white' id='texto13'>Legal warning</a>"
+            texto14.innerHTML="<a href='#!' class='text-white' id='texto14>Information 'use'</a>"
+            texto15.innerHTML="<a href='#!' class='text-white' id='texto15'>Cookies policy</a>"
+            texto16.innerHTML="<a href='#!' class='text-white' id='texto16'>Accessibility</a>"
             break;
     }
 }

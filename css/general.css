@@ -1,26 +1,87 @@
+/*Da el diseño al dropdown de LUGARES*/
+#texto6{
+    width: 75px;
+}
+.dropdown a{
+ text-decoration: none;
+}
+.dropdown a:hover{
+    color: black;
+   }
+.primero{
+    display: flex;
+    flex-direction: row;
+}
+
+.segundo{
+    display: flex;
+    flex-direction: row;
+}
+
+.tercero{
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+   }
+   
+   li:hover {
+     cursor: pointer;
+   }
+   
+   ul li ul {
+     visibility: hidden;
+     opacity: 0;
+     position: absolute;
+     transition: all 0.5s ease;
+     margin-top: 1rem;
+     left: 0;
+     display: none;
+   }
+   
+   ul li:hover > ul,
+    ul li:focus-within > ul,
+    ul li ul:hover,
+    ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  width: 700px;
+}
+   
+   ul li ul li {
+     clear: both;
+     width: 100%;
+   }
+
+/**/
+
 /*Footer*/
 #logo_footer{
-    margin-left: 35%;
-    height: auto;
-    width: 100px;
+  margin-left: 35%;
+  height: auto;
+  width: 100px;
 }
 #footer_mapa img{
-    margin-left: 42.5%;
-    height: auto;
-    width: 150px;
+  margin-left: 42.5%;
+  height: auto;
+  width: 150px;
 }
 .redes_footer{
-    margin-top: 70px;
+  margin-top: 70px;
 }
 /*Fin Footer*/
 @media(max-width:995px){
-    #footer_mapa img{
-        margin-left: 0% !important;
-    }
-    #logo_footer{
-        margin-left: 0%;
-    }
-    .redes_footer_contenedor{
-        margin-left: 5%;
-    }
+  #footer_mapa img{
+      margin-left: 0% !important;
+  }
+  #logo_footer{
+      margin-left: 0%;
+  }
+  .redes_footer_contenedor{
+      margin-left: 5%;
+  }
 }

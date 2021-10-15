@@ -81,7 +81,7 @@ infolugares=[/*Baleares*/
    "Sardinero 2","../imgs/imgLugar/santander/santander(sardinero2).jpg"],
   
    //Santiago de Compostela
-   ["Santiago de Compostela","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
+   ["Galicia","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
    "Casa do Cabildo","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cabildo).jpg",
    "Catedral de Santiago de Compostela","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg",
    "Centro Gallego de Arte Contemporáneo (CGAC)","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cgac).jpg",
