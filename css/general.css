@@ -57,3 +57,31 @@ li {
      width: 100%;
    }
 
+/**/
+
+/*Footer*/
+#logo_footer{
+  margin-left: 35%;
+  height: auto;
+  width: 100px;
+}
+#footer_mapa img{
+  margin-left: 42.5%;
+  height: auto;
+  width: 150px;
+}
+.redes_footer{
+  margin-top: 70px;
+}
+/*Fin Footer*/
+@media(max-width:995px){
+  #footer_mapa img{
+      margin-left: 0% !important;
+  }
+  #logo_footer{
+      margin-left: 0%;
+  }
+  .redes_footer_contenedor{
+      margin-left: 5%;
+  }
+}

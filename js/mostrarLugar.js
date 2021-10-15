@@ -81,7 +81,7 @@ infolugares=[/*Baleares*/
    "Sardinero 2","../imgs/imgLugar/santander/santander(sardinero2).jpg"],
   
    //Santiago de Compostela
-   ["Galicia","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
+   ["Santiago","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
    "Casa do Cabildo","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cabildo).jpg",
    "Catedral de Santiago de Compostela","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg",
    "Centro Gallego de Arte Contemporáneo (CGAC)","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cgac).jpg",
@@ -144,10 +144,23 @@ mapaFondo=[
 window.addEventListener('DOMContentLoaded',(event)=>{
   var lugarSeleccionado = document.URL.split('=')[1]
   // console.log(sitio)
+  console.log(document.getElementById("botonlugar"));
+
+  var infolugares = this.value
+  console.log(this.value)
+
+  buscarLugar(lugarSeleccionado)
+  console.log(document.getElementById("botonlugar"));
+
+});
+
+/*window.addEventListener('DOMContentLoaded',(event)=>{
+  var infolugares = this.value
+   console.log(this.value)
 
   buscarLugar(lugarSeleccionado)
 
-});
+});*/
 
 //texto de ejemplo
 TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
@@ -192,8 +205,8 @@ if (lugarSeleccionado == infolugares[i][0]) {
   for (let j = 2; j < infolugares[i].length; j++) {
     
     if (j % 2 == 0) {
-      
-      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard("'+infolugares[i][j]+'")">'+infolugares[i][j]+'</a>';
+      //onclick="rellernarinfocard("'+infolugares[i][j]+'")"
+      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard(`'+infolugares[i][j]+'`)" id="botonlugar">'+infolugares[i][j]+'</a>';
       /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
       /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
     }
@@ -303,7 +316,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
   +'<!-- Info -->'
   +'<div class="d-flex" id="info">'
     +'<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
-      +TextoBanner+
+      +TextoBanner
     +'</p>'
     +'<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
       +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
@@ -320,7 +333,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'<br>'
     +'<div class="d-flex flex-row mapa">'
       +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
-      +jsinteresa+
+      +jsinteresa
         /*for (let j = 2; j < infolugares[i].length; j++) {
           console.log('for1')
           if (i % 2 == 0) {
@@ -437,6 +450,15 @@ document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
 //document.write(rellenarHTML)
 console.log("fin");
 }
+
+
+
+document.getElementById("botonlugar").addEventListener("click", function(){
+
+  console.log('cardddddddd');
+  console.log('ibibjsjiidjvs');
+
+});
 
 function rellernarinfocard(x) {
   console.log('cardddddddd');
