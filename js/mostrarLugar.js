@@ -184,7 +184,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     
     if (j % 2 == 0) {
       
-      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard('+infolugares[i][j]+')"">'+infolugares[i][j]+'</a>';
+      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard("'+infolugares[i][j]+'")">'+infolugares[i][j]+'</a>';
       /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
       /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
     }
@@ -429,11 +429,14 @@ document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
 console.log("fin");
 }
 
+function rellernarinfocard(x) {
+  console.log('cardddddddd');
+  console.log(x);
+}
 
+function rellernarinfocard2(params) {
 
-function rellernarinfocard(params) {
-
-
+console.log('carddddddd')
 
   for (i = 0; i < infolugares.length && flag4 == false; i++) {
 
