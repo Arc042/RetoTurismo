@@ -37,45 +37,45 @@ telefono.oninput = function() {
 document.getElementById("btnFormulario").onclick = function() {
 
   if (document.getElementById("name").value == "") {
-    document.getElementById("error").style.display="block";
+    document.getElementsByClassName("error")[0].style.display="block";
   } else {
     var name = true;
-    document.getElementById("error").style.display="none";
+    document.getElementsByClassName("error")[0].style.display="none";
   }
 
   if(document.getElementById("apellido").value == "") {
-    document.getElementById("error2").style.display="block";
+    document.getElementsByClassName("error")[1].style.display="block";
   }  else {
     var apellido = true;
-    document.getElementById("error2").style.display="none";
+    document.getElementsByClassName("error")[1].style.display="none";
   }
 
   if(document.getElementById("direccion").value == "") {
-    document.getElementById("error3").style.display="block";
+    document.getElementsByClassName("error")[2].style.display="block";
   } else {
     var direccion = true;
-    document.getElementById("error3").style.display="none";
+    document.getElementsByClassName("error")[2].style.display="none";
   }
 
   if(document.getElementById("cp").value == "") {
-    document.getElementById("error4").style.display="block";
+    document.getElementsByClassName("error")[3].style.display="block";
   } else {
     var cp = true;
-    document.getElementById("error4").style.display="none";
+    document.getElementsByClassName("error")[3].style.display="none";
   }
 
   if(document.getElementById("ciudad").value == "") {
-    document.getElementById("error5").style.display="block";
+    document.getElementsByClassName("error")[4].style.display="block";
   } else {
     var ciudad = true;
-    document.getElementById("error5").style.display="none";
+    document.getElementsByClassName("error")[4].style.display="none";
   } 
 
   if(document.getElementById("provincia").value == "") {
-    document.getElementById("error6").style.display="block";
+    document.getElementsByClassName("error")[5].style.display="block";
   } else {
     var provincia = true;
-    document.getElementById("error6").style.display="none";
+    document.getElementsByClassName("error")[5].style.display="none";
   }
 
   /*Validacion del email*/
@@ -86,46 +86,46 @@ document.getElementById("btnFormulario").onclick = function() {
 
   if (emailRegex.test(correo.value)) {
       correocomprobacion=true;
-      document.getElementById("error7").style.display="none";
+      document.getElementsByClassName("error")[6].style.display="none";
   } else {
       correocomprobacion=false;
-      document.getElementById("error7").style.display="block";
+      document.getElementsByClassName("error")[6].style.display="block";
       /*alert("EMAIL NO VALIDO");*/
   } 
 /*Fin validacion del email*/
 
   if(document.getElementById("telefono").value == "") {
-    document.getElementById("error8").style.display="block";
+    document.getElementsByClassName("error")[7].style.display="block";
   } else {
     var telefono = true;
-    document.getElementById("error8").style.display="none";
+    document.getElementsByClassName("error")[7].style.display="none";
   }
 
   /*Valida si esta todo bien, en caso de estar todo bien lo envia correctamente*/
   if (name == true && apellido == true && direccion == true && cp == true && ciudad == true && provincia == true && correocomprobacion == true && telefono == true) {
     document.getElementById("name").value="";
-    document.getElementById("error").style.display="none";
+    document.getElementsByClassName("error")[1].style.display="none";
    
     document.getElementById("apellido").value='';
-    document.getElementById("error2").style.display="none";
+    document.getElementsByClassName("error")[2].style.display="none";
    
     document.getElementById("direccion").value='';
-    document.getElementById("error3").style.display="none";
+    document.getElementsByClassName("error")[3].style.display="none";
    
     document.getElementById("cp").value='';
-    document.getElementById("error4").style.display="none";
+    document.getElementsByClassName("error")[4].style.display="none";
    
     document.getElementById("ciudad").value='';
-    document.getElementById("error5").style.display="none";
+    document.getElementsByClassName("error")[5].style.display="none";
    
     document.getElementById("provincia").value='';
-    document.getElementById("error6").style.display="none";
+    document.getElementsByClassName("error")[6].style.display="none";
    
     document.getElementById("email").value='';
-    document.getElementById("error7").style.display="none";
+    document.getElementsByClassName("error")[7].style.display="none";
    
     document.getElementById("telefono").value='';
-    document.getElementById("error8").style.display="none";
+    document.getElementsByClassName("error")[8].style.display="none";
    
     document.getElementById("respuesta").value='';
 
@@ -139,28 +139,28 @@ document.getElementById("btnFormulario").onclick = function() {
 document.getElementById("btnRestablecer").onclick = function() {
 
  document.getElementById("name").value="";
- document.getElementById("error").style.display="none";
+ document.getElementsByClassName("error")[1].style.display="none";
 
  document.getElementById("apellido").value='';
- document.getElementById("error2").style.display="none";
+ document.getElementsByClassName("error")[2].style.display="none";
 
  document.getElementById("direccion").value='';
- document.getElementById("error3").style.display="none";
+ document.getElementsByClassName("error")[3].style.display="none";
 
  document.getElementById("cp").value='';
- document.getElementById("error4").style.display="none";
+ document.getElementsByClassName("error")[4].style.display="none";
 
  document.getElementById("ciudad").value='';
- document.getElementById("error5").style.display="none";
+ document.getElementsByClassName("error")[5].style.display="none";
 
  document.getElementById("provincia").value='';
- document.getElementById("error6").style.display="none";
+ document.getElementsByClassName("error")[6].style.display="none";
 
  document.getElementById("email").value='';
- document.getElementById("error7").style.display="none";
+ document.getElementsByClassName("error")[7].style.display="none";
 
  document.getElementById("telefono").value='';
- document.getElementById("error8").style.display="none";
+ document.getElementsByClassName("error")[8].style.display="none";
 
  document.getElementById("respuesta").value='';
 
