@@ -22,66 +22,7 @@ body{
 
 
 
-/*Da el diseño al dropdown de LUGARES*/
-#prueba{
-    width: 75px;
-}
 
-.drowpdown{
-    display: flex;
-    flex-direction: column;
-}
-
-.primero{
-    display: flex;
-    flex-direction: row;
-}
-
-.segundo{
-    display: flex;
-    flex-direction: row;
-}
-
-.tercero{
-    display: flex;
-    flex-direction: row;
-}
-
-li {
-    display: block;
-    transition-duration: 0.5s;
-   }
-   
-   li:hover {
-     cursor: pointer;
-   }
-   
-   ul li ul {
-     visibility: hidden;
-     opacity: 0;
-     position: absolute;
-     transition: all 0.5s ease;
-     margin-top: 1rem;
-     left: 0;
-     display: none;
-   }
-   
-   ul li:hover > ul,
-    ul li:focus-within > ul,
-    ul li ul:hover,
-    ul li ul:focus {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  width: 500px;
-}
-   
-   ul li ul li {
-     clear: both;
-     width: 100%;
-   }
-
-/**/
 
 /*Carrusel, da tamaño a las imagenes y posiciona en el fondo las imagenes*/
 #carrusel{
