@@ -81,7 +81,7 @@ infolugares=[/*Baleares*/
    "Sardinero 2","../imgs/imgLugar/santander/santander(sardinero2).jpg"],
   
    //Santiago de Compostela
-   ["Galicia","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
+   ["Santiago","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela1Banner.jpg",
    "Casa do Cabildo","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cabildo).jpg",
    "Catedral de Santiago de Compostela","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(catedraldecopostela).jpg",
    "Centro Gallego de Arte Contemporáneo (CGAC)","../imgs/imgLugar/santiagodeCompostela/santiagodeCompostela(cgac).jpg",
@@ -303,7 +303,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
   +'<!-- Info -->'
   +'<div class="d-flex" id="info">'
     +'<p class="col-lg-7 col-md-6 mb-4 mb-md-0">'
-      +TextoBanner+
+      +TextoBanner
     +'</p>'
     +'<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
       +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
@@ -320,7 +320,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'<br>'
     +'<div class="d-flex flex-row mapa">'
       +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
-      +jsinteresa+
+      +jsinteresa
         /*for (let j = 2; j < infolugares[i].length; j++) {
           console.log('for1')
           if (i % 2 == 0) {
