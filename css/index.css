@@ -26,12 +26,12 @@ body{
 #texto6{
     width: 75px;
 }
-
-.drowpdown{
-    display: flex;
-    flex-direction: column;
+.dropdown a{
+ text-decoration: none;
 }
-
+.dropdown a:hover{
+    color: black;
+   }
 .primero{
     display: flex;
     flex-direction: row;
@@ -73,7 +73,7 @@ li {
   visibility: visible;
   opacity: 1;
   display: block;
-  width: 500px;
+  width: 700px;
 }
    
    ul li ul li {
@@ -107,6 +107,19 @@ li {
     width: 100%;
 }
 /*Fin navegador*/
+
+.slogan{
+    margin-top: 12%;
+    position: absolute;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: white;
+    color: black;
+}
 
 /*La seccion de arriba a la derecha con los idiomas*/
 .idiomas{
