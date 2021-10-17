@@ -172,6 +172,7 @@ flag = false
 flag2 = false
 flag3 = false
 flag4 = false
+flag5 = false
 
 console.log(infolugares)
 
@@ -206,7 +207,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     
     if (j % 2 == 0) {
       //onclick="rellernarinfocard("'+infolugares[i][j]+'")"
-      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard(`'+infolugares[i][j]+'`)" id="botonlugar">'+infolugares[i][j]+'</a>';
+      var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard(`'+infolugares[i][j]+'`,`'+infolugares[i][0]+'`)" id="botonlugar">'+infolugares[i][j]+'</a>';
       /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
       /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
     }
@@ -393,8 +394,84 @@ if (lugarSeleccionado == infolugares[i][0]) {
   +'<!-- Fin Lugares de interes -->'
   +'<br>'
   +'<br>'
-  +'<!-- Carousel -->'
-  +'<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">'
+  +'<div class="container text-center my-3">'
+    +'<h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>'
+    +'<div class="row mx-auto my-auto justify-content-center">'
+        +'<div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">'
+            +'<div class="carousel-inner" role="listbox">'
+                +'<div class="carousel-item active">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 1</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="carousel-item">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 2</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="carousel-item">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 3</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="carousel-item">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400?text=4" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 4</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="carousel-item">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 5</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+                +'<div class="carousel-item">'
+                    +'<div class="col-md-3">'
+                        +'<div class="card">'
+                            +'<div class="card-img">'
+                                +'<img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">'
+                            +'</div>'
+                            +'<div class="card-img-overlay">Slide 6</div>'
+                        +'</div>'
+                    +'</div>'
+                +'</div>'
+            +'</div>'
+            +'<a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">'
+                +'<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
+            +'</a>'
+            +'<a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">'
+                +'<span class="carousel-control-next-icon" aria-hidden="true"></span>'
+            +'</a>'
+        +'</div>'
+      +'</div>'
+      +'<h5 class="mt-2 fw-light">advances one slide at a time</h5>'
+  +'</div>'
+  +'<!-- Carousel -->'             /////https://www.codeply.com/p/0CWffz76Q9
+  +'<div id="carouselExampleDark" class="carousel carousel-dark slide carousel_lugar" data-bs-ride="carousel">'
     +'<div class="carousel-indicators">'
         +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"'
             +'aria-current="true" aria-label="Slide 1"></button>'
@@ -453,45 +530,64 @@ console.log("fin");
 
 
 
-document.getElementById("botonlugar").addEventListener("click", function(){
+/*document.getElementById("botonlugar").addEventListener("click", function(){
 
   console.log('cardddddddd');
   console.log('ibibjsjiidjvs');
 
-});
+});*/
 
-function rellernarinfocard(x) {
+/*function rellernarinfocard2(x) {
   console.log('cardddddddd');
   console.log(x);
-}
+}*/
 
-function rellernarinfocard2(params) {
-
-console.log('carddddddd')
-
+function rellernarinfocard(params,params2) {
+  console.log('carddddddd')
+  console.log(params2)
+  console.log(params)
+  
+  flag4=false
   for (i = 0; i < infolugares.length && flag4 == false; i++) {
-
+    
     rellenarCARD = ''
-    if (params == infolugares[i][0]) {
+    
+    
+    if (params2 == infolugares[i][0]) {
+      
       flag4 = true
       /*Lugares de interes*/
       var jsinteresa = ''
-      
-      for (let l = 2; l < infolugares[i].length; l++) {
+      flag5=false
+      for (let l = 2; l < infolugares[i].length && flag5 == false; l++) {
+        
 
-        if (l % 2 == 0 ) {
-          var jsinteresimg = '<img src="' + infolugares[i][l] + '" class="img-fluid rounded-start" alt="...">'
+        if (l % 2 == 0 ) {   //////1
+          
+          console.log('if');
+          console.log(infolugares[i][l]);
+          /*../imgs/imgLugar/bilbao/bilbao(arriaga).jpg*/
+          console.log(infolugares[i])
+          console.log(infolugares.includes(infolugares[i]))
+          if (infolugares[i][l].includes(params)==true) {
+            flag5 = true
+            console.log(infolugares[i][l+1])
+            var urlimg=infolugares[i][l+1];
+          }
+          var jsinteresimg = '<img src="'+ urlimg +'" class="img-fluid rounded-start" alt="...">'
+          /*var jsinteresimg = '<img src="' + infolugares[i][l] + '" class="img-fluid rounded-start" alt="...">'*/
           /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
           /*+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'*/
         }
 
       }
-      var nombre = document.getElementsByClassName('lugar_interes')
+      /*var nombre = document.getElementsByClassName('lugar_interes')*/
+      
       for (let k = 2; k < infolugares[i].length; k++) {
 
         if (k % 2 == 1) {
 
-          var jsinterescardnombre = nombre.value;
+          var jsinterescardnombre = params;
 
           /*document.getElementById('card_interes').innerHTML = 
           +'<h5 class="card-title">'+nombre.value+'</h5>'
@@ -508,51 +604,68 @@ console.log('carddddddd')
       }
     }
 
-    rellenarCARD = /*+'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" >'*/
-       '<div class="card mb-3" style="max-width: 540px;">'
-      + '<div class="row g-0">'
-      + '<div class="col-md-4 interes_img">'
-
-      /*var img = document.getElementsByClassName('lugar_interes') 
-      for (let l = 2; l < infolugares[i].length; l++) {
-       
-        if (l % 2 == 0 && img.value==infolugares[i][l]) {*/
-      /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-      + '<img src="' + jsinteresimg + '" class="img-fluid rounded-start" alt="...">'
-      /*}
-      
-    }*/
-      /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
-      + '</div>'
-      + '<div class="col-md-8">'
-      + '<div class="card-body card_interes">'//for con info lugares de interes
-      /*var nombre = document.getElementsByClassName('lugar_interes')
-      for (let k = 2; k < infolugares[i].length; k++) {
+    rellenarCARD = /*'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" id="lugar_card" >'*/
+    '<div class="card mb-3" style="max-width: 540px;">'
+      +'<div class="row g-0">'
+        +'<div class="col-md-4 interes_img">'
         
-        if (k % 2 == 1 ) {*/
-      /*document.getElementById('card_interes').innerHTML = 
-      +'<h5 class="card-title">'+nombre.value+'</h5>'
-      +'<p class="card-text">'+Textolugar+'</p>'
-      +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-      ;*/
-
-      + '<h5 class="card-title">' + jsinterescardnombre + '</h5>'
-      + '<p class="card-text">' + Textolugar + '</p>'
-      + '<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-
-      /*}
-      
-    }*/
-      /*+'<h5 class="card-title">Card title</h5>'
-      +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
-      +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
-      + '</div>'
-      + '</div>'
-      + '</div>'
-      + '</div>'
-      + '</div>'
+          /*var img = document.getElementsByClassName('lugar_interes') 
+          for (let l = 2; l < infolugares[i].length; l++) {
+           
+            if (l % 2 == 0 && img.value==infolugares[i][l]) {
+              document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
+              /*+'<img src="'+jsinteresimg+'" class="img-fluid rounded-start" alt="...">'*/
+              +jsinteresimg
+            /*}
+            
+          }*/
+          /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
+        +'</div>'
+        +'<div class="col-md-8">'
+          +'<div class="card-body card_interes">'//for con info lugares de interes
+            /*var nombre = document.getElementsByClassName('lugar_interes')
+            for (let k = 2; k < infolugares[i].length; k++) {
+              
+              if (k % 2 == 1 ) {
+                document.getElementById('card_interes').innerHTML = 
+                +'<h5 class="card-title">'+nombre.value+'</h5>'
+                +'<p class="card-text">'+Textolugar+'</p>'
+                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                ;*/
+                
+                +'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
+                +'<p class="card-text">'+Textolugar+'</p>'
+                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+                
+              /*}
+              
+            }*/
+            /*+'<h5 class="card-title">Card title</h5>'
+            +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
+            +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
+          +'</div>'
+        +'</div>'
+      +'</div>'
+    +'</div>'
+  /*+'</div>'*/
 
   }
   console.log(rellenarCARD);
   document.getElementById('lugar_card').innerHTML= rellenarCARD;
 }
+
+let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
