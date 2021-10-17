@@ -1,12 +1,68 @@
+/*Este es nuestro header*/
 #header{
 	height: 170px;
 	background-color: rgb(255, 255, 255);
 }
 
-#prueba{
+#nav{
 	margin-top: 6%;
 }
+/*Fin header*/
 
+/*CSS del fondo detras de los cards*/
+.fondo{
+	height: 250px;
+	background-color: rgb(162, 219, 230);
+	display: flex;
+	justify-content: center;
+}
+/*Fin CSS detras cards*/
+
+/*Los cards para mostrar y ocultar*/
+.cardArriba{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 20px;
+	height: 250px;
+	width: 300px;
+}
+
+.imagenCard{
+	margin-left: 108px;
+	height: 100x;
+	width: 80px;
+}
+.imagenCard2{
+	margin-top: 10px;
+	margin-left: 108px;
+	height: 100x;
+	width: 90px;
+}
+
+.card-body{
+	text-align: center;
+}
+
+#telefonoDiv{
+	display: none;
+	margin-top: 0.5%;
+	text-align: center;
+}
+
+.numero{
+	font-weight: bolder;
+	font-size: 30px;
+	color: rgb(100, 82, 100);
+}
+
+.espacio{
+	width: 50px;
+}
+/*Fin cards para mostrar y ocultar*/
+
+/*Formulario con su CSS correspondiente*/
 .error{
 	color: red;
 	font-size: 10px;
@@ -15,9 +71,9 @@
 }
 
 #formulario{
+	display: none;
 	height: auto;
-	background-color: rgba(42, 91, 226, 0.315);
-}
+	background-color: rgb(162, 219, 230);}
 
 .header{
     height: 5%;
@@ -45,8 +101,6 @@
 	width: 125px;
 	text-decoration:none;
 	text-shadow:0px 2px 0px #3d768a;
-	margin-bottom: 2%;
-	margin-top: 2%;
 }
 #btnFormulario:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
@@ -56,7 +110,6 @@
 	position:relative;
 	top:1px;
 }
-
 
 #btnRestablecer {
 	box-shadow: 3px 2px 9px 1px #276873;
@@ -73,7 +126,6 @@
 	width: 125px;
 	text-decoration:none;
 	text-shadow:0px 2px 0px #3d768a;
-	margin-bottom: 2%;
 }
 #btnRestablecer:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
@@ -83,3 +135,28 @@
 	position:relative;
 	top:1px;
 }
+
+label{
+	margin-top: 20px;
+}
+
+input
+    {
+        border: 0;
+        border-bottom: 1px solid;
+        outline: 0;
+    }
+
+	input:hover{
+		color: #276873;
+	}
+
+.botones{
+	height: 75px;
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+/*Fin CSS formulario*/

@@ -139,30 +139,54 @@ document.getElementById("btnFormulario").onclick = function() {
 document.getElementById("btnRestablecer").onclick = function() {
 
  document.getElementById("name").value="";
- document.getElementsByClassName("error")[1].style.display="none";
+ document.getElementsByClassName("error")[0].style.display="none";
 
  document.getElementById("apellido").value='';
- document.getElementsByClassName("error")[2].style.display="none";
+ document.getElementsByClassName("error")[1].style.display="none";
 
  document.getElementById("direccion").value='';
- document.getElementsByClassName("error")[3].style.display="none";
+ document.getElementsByClassName("error")[2].style.display="none";
 
  document.getElementById("cp").value='';
- document.getElementsByClassName("error")[4].style.display="none";
+ document.getElementsByClassName("error")[3].style.display="none";
 
  document.getElementById("ciudad").value='';
- document.getElementsByClassName("error")[5].style.display="none";
+ document.getElementsByClassName("error")[4].style.display="none";
 
  document.getElementById("provincia").value='';
- document.getElementsByClassName("error")[6].style.display="none";
+ document.getElementsByClassName("error")[5].style.display="none";
 
  document.getElementById("email").value='';
- document.getElementsByClassName("error")[7].style.display="none";
+ document.getElementsByClassName("error")[6].style.display="none";
 
  document.getElementById("telefono").value='';
- document.getElementsByClassName("error")[8].style.display="none";
+ document.getElementsByClassName("error")[7].style.display="none";
 
  document.getElementById("respuesta").value='';
 
 /*Fin restablece lo que este escrito*/
 }
+
+/*Muestra y oculta el div de telefono*/
+document.getElementById("btnTelefono").onclick = function() {
+  console.log("hl");
+  document.getElementById("telefono").style.display="block";
+}
+
+document.getElementById("btnOcultar").onclick = function() {
+  console.log("hl");
+  document.getElementById("telefono").style.display="none";
+}
+/*Fin muestra y oculta el div de telefono*/
+
+/*Muestra y oculta el div de formulario*/
+document.getElementById("btnForm").onclick = function() {
+  console.log("hl");
+  document.getElementById("formulario").style.display="block";
+}
+
+document.getElementById("btnFormOcultar").onclick = function() {
+  console.log("hl");
+  document.getElementById("formulario").style.display="none";
+}
+/*Fin muestra y oculta el div de formulario*/
