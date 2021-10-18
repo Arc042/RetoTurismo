@@ -13,7 +13,8 @@
 <body>
 
     <!--Este es el header-->
-    <div class="header position-relative">
+
+    <div class="header  position-relative">
 
         <!--menu de cambio de idioma-->
         <nav class="idiomas position-absolute top-0 end-0" id="idioma">
@@ -77,11 +78,27 @@
     </div>
     <!-- fin del header -->
 
+  <!-- contenedor con cambio de idioma -->
+  <div class="text-center" id="texto">
+    <h3 class="module-title ">DE RUTA POR ESPAÑA</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path fill-rule="evenodd" d="M4.5 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H5.25a.75.75 0 01-.75-.75z">
+        </path>
+    </svg>
+    <p>¿Playas y pueblitos pesqueros? ¿Ciudades que parece, fueron creadas ayer? ¿Bosques vestidos con niebla
+        mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje espectacular?
+        <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .
+    </p>
+</div>
 
+ <!-- pruebas del js para lugar -->
+    <div id="rellenar_lugar">
 
+    </div>
 
     
 <!--Carrusel con los lugares que se pueden visitar-->
+
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 
     
@@ -100,7 +117,7 @@
                             <h3>BILBAO</h3>
                         </div>
                     </div>
-                <!-- </a> -->
+                 </a>
                 
                 <a class="EnlaceLugar" href="/html/lugar.html?lugar=Madrid">
                     <div class="cards lugar">
@@ -223,19 +240,7 @@
 
 </div>
 
-    <!-- contenedor con cambio de idioma -->
-    <div class="text-center mt-4" id="texto">
-        <h3 class="module-title ">DE RUTA POR ESPAÑA</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill-rule="evenodd" d="M4.5 12.75a.75.75 0 01.75-.75h13.5a.75.75 0 010 1.5H5.25a.75.75 0 01-.75-.75z">
-            </path>
-        </svg>
-        <p>¿Playas y pueblitos pesqueros? ¿Ciudades que parece, fueron creadas ayer? ¿Bosques vestidos con niebla
-            mañanera?<br>¿Montes alfombrados con verdes prados? ¿Viñedos que forman un paisaje espectacular?
-            <br><strong>España te espera,</strong> para que puedas escoger la faceta que más te plazca .
-        </p>
-    </div>
-
+  
     <!--Elementos del centro-->
     <div class="central">
 
@@ -281,9 +286,7 @@
 
     
 
-    <!-- pruebas del js para lugar -->
-    <div id="rellenar_lugar">
-    </div>
+   
 
 
 
@@ -410,7 +413,7 @@
 </footer>
 
 <!-- scripts -->
-<script src="../js/idiomas.js"></script>
+<script src="../js/idiomas.js"></script><!--
 <script src="../js/mostrarLugar.js"></script>
-
+-->
 </html>
