@@ -61,9 +61,10 @@ li {
 
 /*Footer*/
 #logo_footer{
-  margin-left: 35%;
-  height: auto;
+  margin-left: 40%;
+  height: 100px;
   width: 100px;
+  margin-top: 50px;
 }
 #footer_mapa img{
   margin-left: 42.5%;
