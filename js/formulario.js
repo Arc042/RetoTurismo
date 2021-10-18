@@ -169,13 +169,11 @@ document.getElementById("btnRestablecer").onclick = function() {
 
 /*Muestra y oculta el div de telefono*/
 document.getElementById("btnTelefono").onclick = function() {
-  console.log("hl");
-  document.getElementById("telefono").style.display="block";
+  document.getElementById("telefonoDiv").style.display="block";
 }
 
 document.getElementById("btnOcultar").onclick = function() {
-  console.log("hl");
-  document.getElementById("telefono").style.display="none";
+  document.getElementById("telefonoDiv").style.display="none";
 }
 /*Fin muestra y oculta el div de telefono*/
 
