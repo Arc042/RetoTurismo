@@ -1,3 +1,7 @@
+.body{
+	background-color: rgb(162, 219, 230);
+}
+
 /*Este es nuestro header*/
 #header{
 	height: 170px;
@@ -12,7 +16,6 @@
 /*CSS del fondo detras de los cards*/
 .fondo{
 	height: 250px;
-	background-color: rgb(162, 219, 230);
 	display: flex;
 	justify-content: center;
 }
@@ -73,7 +76,7 @@
 #formulario{
 	display: none;
 	height: auto;
-	background-color: rgb(162, 219, 230);}
+}
 
 .header{
     height: 5%;
