@@ -99,7 +99,7 @@
 
                         <div class="row justify-content-between text-left">
                             <!-- campo con codigo postal -->
-                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="1" max="999999999999"><p class="error">*Este campo es obligatorio*</p> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="0" max="999999999999"><p class="error">*Este campo es obligatorio*</p> </div>
                             <!-- campo con ciudad -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Ciudad<span class="text-danger"> *</span></label> <input type="text" id="ciudad" name="ciudad" onkeypress="return soloLetras(event)"> <p class="error">*Este campo es obligatorio*</p></div>
                         </div>
@@ -113,7 +113,7 @@
                             <!-- campo con email -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" > <p class="error">*Este campo es obligatorio, ej:prueba@gmail.com*</p> </div>
                             <!-- campo con telefono -->
-                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" > <p class="error">*Este campo es obligatorio*</p></div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" min="0" max="999999999999"> <p class="error">*Este campo es obligatorio*</p></div>
                         </div>
 
                         <div class="row justify-content-between text-left">

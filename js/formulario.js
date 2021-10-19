@@ -20,17 +20,23 @@ function soloLetras(e) {
 /*Fin solo valores alfabeticos*/
 
 /*Funcion para que los valores del CP y de Telefono no sobrepasen un limite numerico*/
-cp.oninput = function() {
-  if (this.value.length > 5 && this.value.length < 0) {
-    this.value = this.value.slice(0,5); 
-  }
+function el(el) {
+  return document.getElementById(el);
 }
 
-telefono.oninput = function() {
-  if (this.value.length > 9 && this.value.length < 0) {
-    this.value = this.value.slice(0,9); 
-  }
+el('cp').addEventListener('input',function() {
+  var val = this.value;
+  this.value = val.replace(/\D|\-/,'');
+});
+
+function el(el) {
+  return document.getElementById(el);
 }
+
+el('telefono').addEventListener('input',function() {
+  var val = this.value;
+  this.value = val.replace(/\D|\-/,'');
+});
 /*Fin funcion para que los valores del CP y de Telefono no sobrepasen un limite numerico*/
 
 /*Funcion que valida si hay algo escrito o no*/
