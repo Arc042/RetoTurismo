@@ -4,7 +4,7 @@
     background-color: white;
     position: absolute;   
     z-index: 2;
-    margin-top: 10%;
+    margin-top: 2%;
     width: 100%;
 }
 
@@ -123,6 +123,7 @@ html {
     border-top-left-radius: inherit;
     display: block;
     width: 17.5em;
+    height: 300px;
 }
 .card > .content {
     background: rgb(192, 192, 192);
