@@ -88,7 +88,7 @@ li {
     width: 100%;
     height: 400px;
     background-color: saddlebrown;
-    position: absolute;
+    position: relative;
 }
 
 #carrusel .imagen{
@@ -268,7 +268,7 @@ top:120%;
 #texto{
     position: relative;
     width:100%;
-    padding-top:34%;
+    padding-top:2%;
     transition: 2s;
 }
 /*FINCARROUSEL DE TURISMO*/
@@ -276,7 +276,7 @@ top:120%;
 
 
 /*css del mediaquery para tablet*/
-@media screen and (max-width: 1246px) and (min-width:980px) {
+@media screen and (max-width: 1250px) and (min-width:980px) {
     .container-fluid{
         display: flex;
         flex-direction: row;
@@ -338,7 +338,12 @@ top:120%;
        
      
      }
-   
+     #texto{
+        position:sticky;
+        width:100%;
+        padding-top:3%;
+        transition: 2s;
+    }
 }
 
 
@@ -405,7 +410,7 @@ top:120%;
     #texto{
         position: relative;
         width:100%;
-        padding-top:42%;
+        padding-top:3%;
         transition: 2s;
     }
     .box{
@@ -475,7 +480,7 @@ top:120%;
     #texto{
         position: relative;
         width:100%;
-        padding-top:52%;
+        padding-top:3%;
         transition: 2s;
     }
 
