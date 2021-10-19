@@ -562,7 +562,7 @@ function rellernarinfocard(params,params2) {
                 
                 +'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
                 +'<p class="card-text">'+Textolugar+'</p>'
-                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+
                 
               /*}
               
