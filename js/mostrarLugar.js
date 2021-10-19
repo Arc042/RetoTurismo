@@ -163,7 +163,7 @@ window.addEventListener('DOMContentLoaded',(event)=>{
 });*/
 
 //texto de ejemplo
-TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum."
+TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id  aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum.sed, eaque fugiat maiores voluptas neque. Eum necessitatibus debitis ducimus! Numquam corrupti possimus mollitia perspiciatis, soluta iure, non corporis nisi libero ea dolor vitae repellat culpa doloremque praesentium exercitationem velit aliquam magnam fugit maiores quis laborum. Doloremque voluptatem illo ex optio, voluptatibus aut eos totam architecto quia veritatis. Assumenda consectetur soluta sed? Obcaecati consectetur impedit sequi non enim esse a accusamus, eius quaerat voluptatum! Repudiandae alias minima enim culpa impedit debitis repellat? Earum, omnis totam. Voluptate impedit fugit animi dolorem distinctio at ratione ullam voluptatem in, similique quo quae enim deleniti voluptates."
 Textolugar="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque ipsa mollitia libero illo impedit laboriosam alias provident. Consequatur earum, provident soluta veniam nobis, quos, iusto sit nihil accusantium tempore quaerat."
 
 //variales para usar en el for
@@ -323,9 +323,9 @@ if (lugarSeleccionado == infolugares[i][0]) {
       +TextoBanner
     +'</p>'
     +'<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
-      +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
-      +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
-      +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
+      +'<button type="button" class="btn btn-outline-primary btn-lg boton">Hoteles</button>'
+      +'<button type="button" class="btn btn-outline-primary btn-lg boton">Restaurantes</button>'
+      // +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
     +'</div>'
   +'</div>'
   +'<!-- Fin Info -->'
