@@ -108,6 +108,7 @@ html {
     grid-gap: 1em;
     overflow: hidden;
     width: 55em;
+
 }
 .wrapper > .inner {
     display: flex;
