@@ -1,21 +1,26 @@
+
 body{
  width:100%;
- margin:auto;
- padding: auto;
+ margin:0px;
+ padding: 0px;
 }
 
 #lugarHover{
     display: none;
 }
 
+#logarHover
 
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
     display:flex;
     width: 100%;
+    height: 800px;
+    background-color: red;
     position: relative;
     z-index: 1;
 }
+
 
 
 /*Da el diseño al dropdown de LUGARES*/
@@ -128,7 +133,7 @@ li {
 
 /*ZONA CENTRAL*/
 
-/*Grid hola*/
+/*Grid*/
 
 .central{
     margin-top: 6%;
@@ -156,7 +161,7 @@ li {
     border: 0px solid;
     width:100%;
     position:relative;
-    padding:5px;
+    padding: 1px;;
 }
 
 .row{
@@ -298,11 +303,11 @@ top:120%;
        grid-template-columns: auto auto auto auto;
        justify-content: center;
        width:100%;
-       margin:auto;
+      
     }
     .grid .card{
        width:auto;
-
+        margin:0;
     }
    
     .cards{
@@ -395,7 +400,9 @@ top:120%;
        grid-gap: 7px 70px;
        grid-template-columns: auto auto ;
        justify-content: center;
-        padding:20px;
+       padding:20px;
+       margin:0px;
+       background-color: #0d6efd;
     }
     .divVideo{
         width: 100%;
@@ -495,8 +502,7 @@ top:120%;
        display:grid;
        grid-template-columns: auto auto ;
        justify-content: center;
-       margin:1px;
-       width:80%;
+      margin:1px;
       
     }
     #imgCirculo{
