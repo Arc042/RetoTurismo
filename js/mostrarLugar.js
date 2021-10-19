@@ -141,26 +141,13 @@ mapaFondo=[
 ['Zaragoza','../imgs/map/ZaragozaMap.PNG']
 ]
 
+//Coge el nombre de la ciudad desde la url
 window.addEventListener('DOMContentLoaded',(event)=>{
   var lugarSeleccionado = document.URL.split('=')[1]
-  // console.log(sitio)
-  console.log(document.getElementById("botonlugar"));
-
-  var infolugares = this.value
-  console.log(this.value)
 
   buscarLugar(lugarSeleccionado)
-  console.log(document.getElementById("botonlugar"));
 
 });
-
-/*window.addEventListener('DOMContentLoaded',(event)=>{
-  var infolugares = this.value
-   console.log(this.value)
-
-  buscarLugar(lugarSeleccionado)
-
-});*/
 
 //texto de ejemplo
 TextoBanner="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita temporibus alias, optio odio veritatis consequatur dolores id  aperiam autem numquam laudantium omnis itaque. Distinctio ad at incidunt, laborum explicabo dolorem eaque delectus alias voluptates minima. Ad suscipit doloribus aperiam voluptatem possimus neque natus voluptates minus laudantium reiciendis voluptate tenetur itaque, architecto nostrum illum pariatur nesciunt eveniet labore optio sint! Consequatur, sed itaque reprehenderit minus aperiam voluptate consequuntur? Numquam suscipit earum mollitia neque doloribus maiores quidem eius distinctio provident aliquid, voluptatem enim praesentium, sequi fugit nam aliquam non! Veritatis alias dolor temporibus obcaecati, error libero explicabo vero similique doloribus quis cum.sed, eaque fugiat maiores voluptas neque. Eum necessitatibus debitis ducimus! Numquam corrupti possimus mollitia perspiciatis, soluta iure, non corporis nisi libero ea dolor vitae repellat culpa doloremque praesentium exercitationem velit aliquam magnam fugit maiores quis laborum. Doloremque voluptatem illo ex optio, voluptatibus aut eos totam architecto quia veritatis. Assumenda consectetur soluta sed? Obcaecati consectetur impedit sequi non enim esse a accusamus, eius quaerat voluptatum! Repudiandae alias minima enim culpa impedit debitis repellat? Earum, omnis totam. Voluptate impedit fugit animi dolorem distinctio at ratione ullam voluptatem in, similique quo quae enim deleniti voluptates."
@@ -174,27 +161,8 @@ flag3 = false
 flag4 = false
 flag5 = false
 
-console.log(infolugares)
-
-
-//funcion que redirige a lugar y que llame a la funcion que rellena la informacion de lugar
-
-
+//Funcion que rellena el html lugar
 function buscarLugar(lugarSeleccionado) {
-console.log(lugarSeleccionado);
-//window.location="lugar.html"; ////cambiar de html
-console.log('ha entrado')
-//cambiar el clasname a lo que necesites para llamar a esta pagina
-/*lugarSeleccionado = document.getElementsByClassName("lugar").getAttribute('value');
-console.log(lugarSeleccionado);
-lugarSeleccionado2 = document.getElementById("lugar").getAttribute('value');
-console.log(lugarSeleccionado2);*/
-
-//for con una condicion para detenerse en cuanto encuentre el lugar deseado
-//variable que almacene el valor seleccionado por el usuario
-// generar el html, el cual va a almacenar la posicion [0] como titulo y la posicion [1] como img del banner
-//mientras que el resto de posiciones pares van a ser el nombre del lugar y las impares la imagen del card
-//crear en el html un conenedor principal que se va a borrar cada vez que se cambie de ciudades
 
 for (i = 0; i < infolugares.length && flag == false ; i++) {
 
@@ -203,108 +171,20 @@ if (lugarSeleccionado == infolugares[i][0]) {
   flag = true
   /*Lugares de interes*/
   var jsinteresa = ''
+  //Guardar en una variable todos los "a"
   for (let j = 2; j < infolugares[i].length; j++) {
     
     if (j % 2 == 0) {
-      //onclick="rellernarinfocard("'+infolugares[i][j]+'")"
       var jsinteresa = jsinteresa+'<a class="enlaces lugar_interes" onclick="rellernarinfocard(`'+infolugares[i][j]+'`,`'+infolugares[i][0]+'`)" id="botonlugar">'+infolugares[i][j]+'</a>';
-      /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
-      /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
     }
     
   }
-  /*var img = document.getElementsByClassName('lugar_interes') 
-    for (let l = 2; l < infolugares[i].length; l++) {
-               
-      if (l % 2 == 0 && img.value==infolugares[i][l]) {
-        var jsinteresimg = jsinteresimg+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'
-        /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-        /*+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'*/
-     /* }
-                
-    }
-    var nombre = document.getElementsByClassName('lugar_interes')
-    for (let k = 2; k < infolugares[i].length; k++) {
-      
-      /*if (k % 2 == 1 ) {
-
-        var jsinterescardnombre = nombre.value;
-
-        /*document.getElementById('card_interes').innerHTML = 
-        +'<h5 class="card-title">'+nombre.value+'</h5>'
-        +'<p class="card-text">'+Textolugar+'</p>'
-        +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-        ;*/
-        
-        /*+'<h5 class="card-title">'+nombre.value+'</h5>'
-        +'<p class="card-text">'+Textolugar+'</p>'
-        +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
-        
-      /*}
-      
-    }*/
-    /*Carousel*/
-    for (let k = 2; k < infolugares[i].length; k++) {
-      
-      if (k % 2 == 0 && flag2 == false) {
-        flag2=true;
-        var jsinterescarouselnombre1 = infolugares[i][k];
-        var jsinterescarouselnombre2 = infolugares[i][k+2];
-        var jsinterescarouselnombre3 = infolugares[i][k+4];
-        console.log(infolugares[i][k])
-        console.log(infolugares[i][k+2])
-        console.log(infolugares[i][k+4])
-      }
-
-      if (k % 2 == 1 && flag3 == false) {
-        flag3=true;
-        var jsinterescarouselimg1 = infolugares[i][k];
-        var jsinterescarouselimg2 = infolugares[i][k+2];
-        var jsinterescarouselimg3 = infolugares[i][k+4];
-        console.log(infolugares[i][k])
-        console.log(infolugares[i][k+2])
-        console.log(infolugares[i][k+4])
-      }
-      /*var jsinterescarousel1 = 
-      '<img src="'+jsinterescarouselimg1+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-      +'<div class="carousel-caption d-none d-md-block">'
-          +'<h5 class="text-white">'+jsinterescarouselnombre1+'</h5>'
-          +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
-      +'</div>'
-  
-      var jsinterescarousel2 = 
-      '<img src="'+jsinterescarouselimg2+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-      +'<div class="carousel-caption d-none d-md-block">'
-          +'<h5 class="text-white">'+jsinterescarouselnombre2+'</h5>'
-          +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
-      +'</div>'
-  
-        var jsinterescarousel3 = 
-        '<img src="'+jsinterescarouselimg3+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-        +'<div class="carousel-caption d-none d-md-block">'
-            +'<h5 class="text-white">'+jsinterescarouselnombre3+'</h5>'
-            +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
-        +'</div>'
-    
-
-        /*'<div class="carousel-item active" data-bs-interval="10000">'
-            '<img src="../imgs/imgLugar/bilbao/bilbaoBanner.jpg" class="d-block w-100 carousel_img" alt="...">'
-            '<div class="carousel-caption d-none d-md-block">'
-                '<h5 class="text-white">First slide label</h5>'
-                '<p class="text-white">Some representative placeholder content for the first slide.</p>'
-            '</div>'
-        '</div>'*/
-        
-      
-      
-    }
-
-    //imgs para el fondo
+    //imgs para el fondo 
     if (lugarSeleccionado == mapaFondo[i][0]) {
       var imagenFondo = mapaFondo[i][1]
     }
 
-  //agregar todo el html del contenedor principal
+  //Variable que se rellena con el html
   rellenarHTML = '<!-- Banner -->'
   +'<div class="p-5 text-center bg-image banner" style="background-image: url('+infolugares[i][1]+');">'
    +' <div class="mask" >'
@@ -325,7 +205,6 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'<div class="col-lg-5 col-md-6 mb-4 mb-md-0 d-flex flex-column">'
       +'<button type="button" class="btn btn-outline-primary btn-lg boton">Hoteles</button>'
       +'<button type="button" class="btn btn-outline-primary btn-lg boton">Restaurantes</button>'
-      // +'<button type="button" class="btn btn-outline-primary btn-lg boton">Primary</button>'
     +'</div>'
   +'</div>'
   +'<!-- Fin Info -->'
@@ -337,248 +216,65 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'<br>'
     +'<div class="d-flex flex-row mapa">'
       +'<div class="col-lg-6 col-md-4 col-sm-3 col-3 mb-4 mb-md-0 d-flex flex-column interes">'
-      +jsinteresa
-        /*for (let j = 2; j < infolugares[i].length; j++) {
-          console.log('for1')
-          if (i % 2 == 0) {
-            console.log('if1')*/
-            /*document.getElementById('interes').innerHTML = +'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+infolugares[i][j]+'">'+infolugares[i][j]+'</a>';*/
-            /*+'<a class="enlaces lugar_interes" onclick="buscarLugar()" value="'+jsinteresa+'">'+jsinteresa+'</a>'*/
-          /*}
-          
-        }*/
+        +jsinteresa
         +'<br>'
       +'</div>'
-      +'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" id="lugar_card" >'
-        /*+'<div class="card mb-3" style="max-width: 540px;">'
-          +'<div class="row g-0">'
-            +'<div class="col-md-4 interes_img">'
-            
-              /*var img = document.getElementsByClassName('lugar_interes') 
-              for (let l = 2; l < infolugares[i].length; l++) {
-               
-                if (l % 2 == 0 && img.value==infolugares[i][l]) {*/
-                  /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-                  /*+'<img src="'+jsinteresimg+'" class="img-fluid rounded-start" alt="...">'*/
-                /*}
-                
-              }*/
-              /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
-            /*+'</div>'
-            +'<div class="col-md-8">'
-              +'<div class="card-body card_interes">'//for con info lugares de interes
-                /*var nombre = document.getElementsByClassName('lugar_interes')
-                for (let k = 2; k < infolugares[i].length; k++) {
-                  
-                  if (k % 2 == 1 ) {*/
-                    /*document.getElementById('card_interes').innerHTML = 
-                    +'<h5 class="card-title">'+nombre.value+'</h5>'
-                    +'<p class="card-text">'+Textolugar+'</p>'
-                    +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-                    ;*/
-                    
-                    /*+'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
-                    +'<p class="card-text">'+Textolugar+'</p>'
-                    +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
-                    
-                  /*}
-                  
-                }*/
-                /*+'<h5 class="card-title">Card title</h5>'
-                +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
-                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
-              /*+'</div>'
-            +'</div>'
-          +'</div>'
-        +'</div>'*/
+      +'<div class="col-lg-6 col-md-8 col-sm-9 col-xs-9 col-9 mb-4 mb-md-0 lugar_card" id="lugar_card" >'
       +'</div>'
     +'</div>'
   +'</div>'
   +'<!-- Fin Lugares de interes -->'
   +'<br>'
   +'<br>'
-  /*+'<!-- Carousel -->'             /////https://www.codeply.com/p/0CWffz76Q9
-  +'<div id="carouselExampleDark" class="carousel carousel-dark slide carousel_lugar" data-bs-ride="carousel">'
-    +'<div class="carousel-indicators">'
-        +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"'
-            +'aria-current="true" aria-label="Slide 1"></button>'
-        +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"'
-            +'aria-label="Slide 2"></button>'
-        +'<button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"'
-            +'aria-label="Slide 3"></button>'
-    +'</div>'
-    +'<div class="carousel-inner">'
-          /*+jsinterescarousel+*/
-        /*+'<div class="carousel-item active" data-bs-interval="10000">'
-        /*+jsinterescarousel1+*/
-            /*+'<img src="'+jsinterescarouselimg1+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-            +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">'+jsinterescarouselnombre1+'</h5>'
-                +'<p class="text-white">Some representative placeholder content for the first slide.</p>'
-            +'</div>'
-        +'</div>'
-        +'<div class="carousel-item" data-bs-interval="2000">'
-        /*+jsinterescarousel2+*/
-           /* +'<img src="'+jsinterescarouselimg2+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-            +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">'+jsinterescarouselnombre2+'</h5>'
-                +'<p class="text-white">Some representative placeholder content for the second slide.</p>'
-            +'</div>'
-        +'</div>'
-        +'<div class="carousel-item">'
-        /*+jsinterescarousel3+*/
-           /* +'<img src="'+jsinterescarouselimg3+'" style="background-size: cover;width: 100%;height: 400px;" class="d-block w-100 carousel_img" alt="...">'
-            +'<div class="carousel-caption d-none d-md-block">'
-                +'<h5 class="text-white">'+jsinterescarouselnombre3+'</h5>'
-                +'<p class="text-white">Some representative placeholder content for the third slide.</p>'
-            +'</div>'
-        +'</div>'
-    +'</div>'
-    +'<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">'
-        +'<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
-        +'<span class="visually-hidden">Previous</span>'
-    +'</button>'
-    +'<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">'
-        +'<span class="carousel-control-next-icon" aria-hidden="true"></span>'
-        +'<span class="visually-hidden">Next</span>'
-    +'</button>'
-+'</div>'
-  +'<!-- Fin Carousel -->'*/
-  
 }    
-
-
 }
-console.log(rellenarHTML);
 document.getElementById('rellenar_lugar').innerHTML= rellenarHTML;
-//document.write(rellenarHTML)
-console.log("fin");
 }
 
-
-
-/*document.getElementById("botonlugar").addEventListener("click", function(){
-
-  console.log('cardddddddd');
-  console.log('ibibjsjiidjvs');
-
-});*/
-
-/*function rellernarinfocard2(x) {
-  console.log('cardddddddd');
-  console.log(x);
-}*/
-
+//Funcion para que aparezca la card en lugares de interes segun el nombre que elijas
 function rellernarinfocard(params,params2) {
-  console.log('carddddddd')
-  console.log(params2)
-  console.log(params)
   
   flag4=false
   for (i = 0; i < infolugares.length && flag4 == false; i++) {
-    
     rellenarCARD = ''
-    
-    
     if (params2 == infolugares[i][0]) {
       
       flag4 = true
-      /*Lugares de interes*/
       var jsinteresa = ''
       flag5=false
+      //Guarda la imagen en una variable
       for (let l = 2; l < infolugares[i].length && flag5 == false; l++) {
-        
-
-        if (l % 2 == 0 ) {   //////1
-          
-          console.log('if');
-          console.log(infolugares[i][l]);
-          /*../imgs/imgLugar/bilbao/bilbao(arriaga).jpg*/
-          console.log(infolugares[i])
-          console.log(infolugares.includes(infolugares[i]))
+        if (l % 2 == 0 ) {
           if (infolugares[i][l].includes(params)==true) {
             flag5 = true
-            console.log(infolugares[i][l+1])
             var urlimg=infolugares[i][l+1];
           }
           var jsinteresimg = '<img src="'+ urlimg +'" class="img-fluid rounded-start" alt="...">'
-          /*var jsinteresimg = '<img src="' + infolugares[i][l] + '" class="img-fluid rounded-start" alt="...">'*/
-          /*document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-          /*+'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">'*/
         }
-
       }
-      /*var nombre = document.getElementsByClassName('lugar_interes')*/
-      
+      //Guarda el nombre del lugar en una variable
       for (let k = 2; k < infolugares[i].length; k++) {
-
         if (k % 2 == 1) {
-
           var jsinterescardnombre = params;
-
-          /*document.getElementById('card_interes').innerHTML = 
-          +'<h5 class="card-title">'+nombre.value+'</h5>'
-          +'<p class="card-text">'+Textolugar+'</p>'
-          +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-          ;*/
-
-          /*+'<h5 class="card-title">'+nombre.value+'</h5>'
-          +'<p class="card-text">'+Textolugar+'</p>'
-          +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
-
         }
-
       }
     }
-
-    rellenarCARD = /*'<div class="col-lg-6 col-md-8 col-sm-9 col-9 mb-4 mb-md-0 lugar_card" id="lugar_card" >'*/
+    //Variable que se rellena con el html
+    rellenarCARD = 
     '<div class="card mb-3" style="max-width: 540px;">'
       +'<div class="row g-0">'
-        +'<div class="col-md-4 interes_img">'
-        
-          /*var img = document.getElementsByClassName('lugar_interes') 
-          for (let l = 2; l < infolugares[i].length; l++) {
-           
-            if (l % 2 == 0 && img.value==infolugares[i][l]) {
-              document.getElementById('interes_img').innerHTML = +'<img src="'+infolugares[i][l]+'" class="img-fluid rounded-start" alt="...">';*/
-              /*+'<img src="'+jsinteresimg+'" class="img-fluid rounded-start" alt="...">'*/
+        +'<div class="col-lg-6 col-md-4 col-sm-4 col-xs-9 col-9 interes_img">'
               +jsinteresimg
-            /*}
-            
-          }*/
-          /*+'<img src="..." class="img-fluid rounded-start" alt="...">'*/
         +'</div>'
-        +'<div class="col-md-8">'
-          +'<div class="card-body card_interes">'//for con info lugares de interes
-            /*var nombre = document.getElementsByClassName('lugar_interes')
-            for (let k = 2; k < infolugares[i].length; k++) {
-              
-              if (k % 2 == 1 ) {
-                document.getElementById('card_interes').innerHTML = 
-                +'<h5 class="card-title">'+nombre.value+'</h5>'
-                +'<p class="card-text">'+Textolugar+'</p>'
-                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
-                ;*/
-                
+        +'<div class="col-lg-6 col-md-8 col-sm-8 col-xs-9 col-9">'
+          +'<div class="card-body card_interes">'
                 +'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
                 +'<p class="card-text">'+Textolugar+'</p>'
-
-                
-              /*}
-              
-            }*/
-            /*+'<h5 class="card-title">Card title</h5>'
-            +'<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>'
-            +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'*/
           +'</div>'
         +'</div>'
       +'</div>'
     +'</div>'
-  /*+'</div>'*/
 
   }
-  console.log(rellenarCARD);
   document.getElementById('lugar_card').innerHTML= rellenarCARD;
 }
-
-

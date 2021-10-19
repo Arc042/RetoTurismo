@@ -4,7 +4,7 @@
     background-color: white;
     position: absolute;   
     z-index: 2;
-    margin-top: 2%;
+    margin-top: 1.5%;
     width: 100%;
 }
 
@@ -68,31 +68,16 @@
 /*Fin Lugares de interes*/
 
 /*Carousel*/
-/*.carousel_lugar{
-    width: 80%;
-    height: 50px;
-}*/
 .carousel_img{
     filter: brightness(50%);
     
 }
 /* Fin Carousel*/
-/*Media Query*/
-@media(max-width:767px){
-    .boton{
-        display: none !important;
-    }
-}
-/*Fin Media Query*/
 
+/*Carousel*/
 html {
     height: 100%;
 }
-/*body {
-    background: #001d38;
-    font-family: "Poppins", sans-serif;
-    overflow: hidden;
-}*/
 .center {
     align-items: center;
     display: flex;
@@ -168,6 +153,21 @@ html {
     height: 0.5em;
     width: 0.5em;
 }
+/*Fin Carousel*/
+
+/*Media Query*/
+@media(max-width:767px){
+    .boton{
+        display: none !important;
+    }
+}
+
+@media(max-width:880px){
+    .center {
+        display: none;
+        /*visibility: hidden;*/
+    }
+}
   
   @media (max-width: 767px) {
     .carousel-inner .carousel-item > div {
@@ -202,6 +202,9 @@ html {
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
 }
+/*Fin Media Query*/
+
+
 
 
 
