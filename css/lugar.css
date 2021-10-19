@@ -7,6 +7,7 @@
     margin-top: 2%;
     width: 100%;
 }
+
 /*Fin navegador*/
 /*Banner*/
 .banner{
@@ -21,6 +22,7 @@
     margin-top: 10%;
 }
 /*Fin Banner*/
+
 /*Info*/
 #info{
     width: 90%;
@@ -34,9 +36,11 @@
     margin-top: 5%;
 }
 /* Fin Info*/
+
 /*Lugares de interes*/
 .lugar_interes{
-    background-color: rgb(192, 192, 192);
+    background-size: cover;
+    width: 100%;
 }
 .mapa{
     width: 90%;
@@ -50,7 +54,19 @@
 .lugar_card{
     margin-top: 5%;
 }
+.interes{
+    background-color: white;
+    width: 20%;
+    margin-left: 0px;
+    text-align: center;
+}
+.interes a{
+    margin-left: 0px;
+    background-color: white;
+    
+}
 /*Fin Lugares de interes*/
+
 /*Carousel*/
 /*.carousel_lugar{
     width: 80%;
@@ -151,14 +167,6 @@ html {
     height: 0.5em;
     width: 0.5em;
 }
-
-
-
-
-
-
-
-
 
 /*@media (max-width: 767px) {
     .carousel-inner .carousel-item > div {

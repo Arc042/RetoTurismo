@@ -132,7 +132,7 @@ mapaFondo=[
 ['Barcelona','../imgs/map/BarcelonaMap.PNG'],
 ['Bilbao','../imgs/map/BilbaoMap.PNG'],
 ['Canarias','../imgs/map/CanariasMap.PNG'],
-['Madrid','../imgs/map/MadridsMap.PNG'],
+['Madrid','../imgs/map/MadridMap.PNG'],
 ['Malaga','../imgs/map/MalagaMap.PNG'],
 ['Santander','../imgs/map/SantanderMap.PNG'],
 ['Santiago de Compostela','../imgs/map/SantiagoMap.PNG'],
@@ -299,6 +299,10 @@ if (lugarSeleccionado == infolugares[i][0]) {
       
     }
 
+    //imgs para el fondo
+    if (lugarSeleccionado == mapaFondo[i][0]) {
+      var imagenFondo = mapaFondo[i][1]
+    }
 
   //agregar todo el html del contenedor principal
   rellenarHTML = '<!-- Banner -->'
@@ -307,8 +311,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
     +'  <div class="d-flex justify-content-center align-items-center h-100">'
      +'   <div class="text-white banner_text">'
       +'    <h1 class="mb-3">'+infolugares[i][0]+'</h1>'
-       +'   <h4 class="mb-3">Subheading</h4>'
-        +'  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>'
+        +'  <a class="btn btn-outline-light btn-lg" href="#!" role="button">Reservar Viaje</a>'
         +'</div>'
       +'</div>'
     +'</div>'
@@ -329,7 +332,7 @@ if (lugarSeleccionado == infolugares[i][0]) {
   +'<br>'
   +'<br>'
   +'<!-- Lugares de interes -->'
-  +'<div class="lugar_interes">'
+  +'<div class="lugar_interes" style="background-image: url('+imagenFondo+');">'
     +'<h2 class="text-center">Lugares de interes</h2>'
     +'<br>'
     +'<div class="d-flex flex-row mapa">'
@@ -559,7 +562,7 @@ function rellernarinfocard(params,params2) {
                 
                 +'<h5 class="card-title">'+jsinterescardnombre+'</h5>'
                 +'<p class="card-text">'+Textolugar+'</p>'
-                +'<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>'
+
                 
               /*}
               
