@@ -1,4 +1,3 @@
-
 body{
  width:100%;
  margin:auto;
@@ -9,7 +8,6 @@ body{
     display: none;
 }
 
-#logarHover
 
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
@@ -20,7 +18,6 @@ body{
     position: relative;
     z-index: 1;
 }
-
 
 
 /*Da el diseño al dropdown de LUGARES*/
@@ -137,11 +134,10 @@ li {
 
 .central{
     margin-top: 6%;
-    width: 100%;
+    width: 99.5%;
     height: 275px;
     text-align: center;
     margin-bottom: 5%;
-    
 }
 
 #imgCirculo{
@@ -160,7 +156,7 @@ li {
     border: 0px solid;
     width:100%;
     position:relative;
-   padding:5px;
+    padding:5px;
 }
 
 .row{
@@ -421,13 +417,12 @@ top:120%;
 
    /*css del mediaquery para movil*/
 @media screen and (max-width: 774px) and (min-width:400px){
+    
     .container-fluid{
         display:grid;
-        flex-direction: row;
+        grid-template-columns: auto;
         width:100%;
         justify-content: center;
-       
-       
     }
     .idiomas{
        opacity: 0;
@@ -454,11 +449,13 @@ top:120%;
     }
 
     #bprev {
+        opacity:0;
         position: absolute;
         top:102%;
         transition:2s;
     }
     #bnext{
+        opacity:0;
         position: absolute;
         top:102%;
         left:50%;
@@ -482,14 +479,15 @@ top:120%;
         width:100%;
         padding-top:3%;
         transition: 2s;
+     
     }
 
     .central{
         margin-top: 11%;
         width: 100%;
-        height: 100%;
+        height: 80%;
         text-align: center;
-        margin-bottom: 5%;
+        margin-bottom: 0px;
         margin-left: 1%;
     }
   
@@ -498,9 +496,28 @@ top:120%;
        grid-template-columns: auto auto ;
        justify-content: center;
       
+      
+    }
+    #imgCirculo{
+        align-self: center;
+        width: 150px;
+        height: 150px; 
+        border-radius: 100px;
+    }
+    
+    .card{
+        margin:0;
+        width:100%;
+    }
+    
+    
+   
+    .box{
+        height:0px;
     }
     .divVideo{
-        width: 100%;
+        opacity:0;
+        width: 0px;
         transition:3s;
     
     }

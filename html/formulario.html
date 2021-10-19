@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/index.css">
+
 </head>
 <body class="body">
 
@@ -17,7 +19,7 @@
     <div class="container_header position-absolute top-30 start-50 translate-middle" id="nav">
         <header class="d-flex justify-content-center py-3 ">
             <ul class="nav nav-pills"><!-- navegador que redirecciona a las distintas paginas -->
-                <li class="nav-item" id="texto5"><a href="../html/index.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item" id="texto5"><a href="../html/index.html" class="nav-link" aria-current="page">Home</a></li>
                 <li class="nav-item" id="texto6"><a href="" class="nav-link">Lugares</a>
                     <ul class="dropdown">
                         <div class="primero">
@@ -42,12 +44,14 @@
                 </li>
                 <li class="nav-item" id="texto7"><a href="#" class="nav-link">Precios</a></li>
                 <li class="nav-item" id="texto8"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item" id="texto9"><a href="../html/formulario.html" class="nav-link">Contacto</a></li>
+                <li class="nav-item" id="texto9"><a href="../html/formulario.html" class="nav-link active">Contacto</a></li>
             </ul>
         </header>
     </div>
     <!-- fin del navegador -->
-  </div><!--fin del header-->
+  </div>
+  
+  <!--fin del header-->
    
   <!--Cards con mostrar y ocultar el formulario/telefono-->
   <div class="fondo">
@@ -69,11 +73,9 @@
           <button class="btn btn-primary" id="btnTelefono">Mostrar</button>
           <button class="btn btn-primary" id="btnOcultar">Ocultar</button>
         </div>
-        <div id="telefonoDiv">
-            <p class="numero">+34 675 87 98 23</p>
-        </div>
       </div>
   </div>
+  <div id="telefonoDiv"><p class="numero">+34 675 87 98 23</p></div>
   
   <!--Fin cards de mostrar y ocultar el formulario/telefono-->
 
@@ -99,7 +101,7 @@
 
                         <div class="row justify-content-between text-left">
                             <!-- campo con codigo postal -->
-                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="1" max="999999999999"><p class="error">*Este campo es obligatorio*</p> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Código Postal<span class="text-danger"> *</span></label> <input type="number" id="cp" name="cp" min="0" max="999999999999"><p class="error">*Este campo es obligatorio*</p> </div>
                             <!-- campo con ciudad -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Ciudad<span class="text-danger"> *</span></label> <input type="text" id="ciudad" name="ciudad" onkeypress="return soloLetras(event)"> <p class="error">*Este campo es obligatorio*</p></div>
                         </div>
@@ -113,7 +115,7 @@
                             <!-- campo con email -->
                             <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" > <p class="error">*Este campo es obligatorio, ej:prueba@gmail.com*</p> </div>
                             <!-- campo con telefono -->
-                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" > <p class="error">*Este campo es obligatorio*</p></div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono<span class="text-danger"> *</span></label> <input type="number" id="telefono" name="telefono" min="0" max="999999999999"> <p class="error">*Este campo es obligatorio*</p></div>
                         </div>
 
                         <div class="row justify-content-between text-left">
@@ -143,7 +145,7 @@ crossorigin="anonymous"></script>
 
 <script src="../js/formulario.js"></script>
 </body>
-<footer class="text-white text-center text-lg-start bg-primary">
+<footer class="text-white text-center text-lg-start footer mt-auto py-3 bg-primary">
     <!-- Grid container -->
     <div class="container ">
         <!--Grid row-->

@@ -1,3 +1,4 @@
+/*JS para nuestro cambio de idiomas*/
 texto=document.getElementById('texto')
 texto1=document.getElementById('texto1')
 texto2=document.getElementById('texto2')
@@ -16,6 +17,7 @@ texto14=document.getElementById('texto14');
 texto15=document.getElementById('texto15');
 texto16=document.getElementById('texto16');
 
+/*Dependiendo del num, es un numero, entonces es un idioma diferente, cada case tiene un idioma*/
 function cambioIdioma(num) {
 console.log(num)
     switch (num) {
