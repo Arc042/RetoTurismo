@@ -1,4 +1,3 @@
-
 body{
  width:100%;
  margin:auto;
@@ -9,7 +8,6 @@ body{
     display: none;
 }
 
-#logarHover
 
 /*PARTE DE ARRIBA (NAVEGADOR + CARRUSEL)*/
 .header{
@@ -20,7 +18,6 @@ body{
     position: relative;
     z-index: 1;
 }
-
 
 
 /*Da el diseño al dropdown de LUGARES*/
