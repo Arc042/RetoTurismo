@@ -20,6 +20,17 @@ function soloLetras(e) {
 /*Fin solo valores alfabeticos*/
 
 /*Funcion para que los valores del CP y de Telefono no sobrepasen un limite numerico y no sea negativo el valor*/
+cp.oninput = function() {
+  if (this.value.length > 5) {
+    this.value = this.value.slice(0,5); 
+  }
+}
+
+telefono.oninput = function() {
+  if (this.value.length > 9) {
+    this.value = this.value.slice(0,9); 
+  }
+}
 function el(el) {
   return document.getElementById(el);
 }
